@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A9C5EF697D56858E5C13534D38C4CDEDFA514901",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54F08066D128EBB947A24068080321068C7DD380" : 0,
+    "A9C5EF697D56858E5C13534D38C4CDEDFA514901" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E34DB0F-1A7C-43E5-82C2-84BF94CAAA7D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54F08066D128EBB947A24068080321068C7DD380" : "OneYuan",
+    "A9C5EF697D56858E5C13534D38C4CDEDFA514901" : "YiYuanYunGou\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OneYuan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OneYuan.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:king824\/1YYG.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54F08066D128EBB947A24068080321068C7DD380"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JxbSir\/YiYuanYunGou.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9C5EF697D56858E5C13534D38C4CDEDFA514901"
+    }
+  ]
+}

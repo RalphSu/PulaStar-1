@@ -1,0 +1,107 @@
+//
+//  one-prefix.pch
+
+//  Copyright (c)     All rights reserved.
+//
+
+#import "Constants.h"
+
+#import "XBBaseVC.h"
+#import "UIColor+hexColor.h"
+#import "UIView+StringTag.h"
+#import "NSString+Size.h"
+#import "UITableViewCell+SeparatorLine.h"
+#import "UIImage+RenderedImage.h"
+#import "UIImageView+NoMapMode.h"
+#import "UIAlertView+Blocks.h"
+#import "XBApi.h"
+#import "XBGlobal.h"
+#import "XBParser.h"
+#import "XBToastManager.h"
+#import "PulaStar_Common_Common.h"
+#import "XBDbHandler.h"
+
+#import "PulaBaseVC.h"
+#import "PulaBaseParser.h"
+
+
+#import "TouchJSON/NSDictionary_JSONExtensions.h"
+#import "Jastor.h"
+#import "SVPullToRefreshView+OY_PullRefreshView.h"
+#import "UIImageView+WebCache.h"
+#import "LMDropdownView.h"
+#import "BTBadgeView.h"
+#import "AFNetworkReachabilityManager.h"
+#import <SCLAlertView.h>
+#import "ASPopUpView.h"
+#import "ASProgressPopUpView.h"
+#import "TCBlobDownload.h"
+#import "ZipArchive.h"
+#import "PDKeychainBindings.h"
+
+
+
+#define kDidNotifyFromBack      @"kDidNotifyFromBack"
+#define kDidNotifyReloadNewest  @"kDidNotifyReloadNewest"
+#define kLoginUsername          @"kLoginUsername"
+#define kNoMapMode              @"kNoMapMode"
+#define kDidLoginOk             @"kDidLoginOk"
+#define kDidAddCart             @"kDidAddCart"
+#define kDidAddCartOpt          @"kDidAddCartOpt"
+#define kDidAddCartSearch       @"kDidAddCartSearch"
+#define kDidShowNewPro          @"kDidShowNewPro"
+#define kDidNotifyApns          @"kDidNotifyApns"
+#define kDidReloadUser          @"kdidReloadUser"
+#define kDidShowCart            @"kDidShowCart"
+#define kSaveLibVersion         @"kSaveLibVersion"
+#define kOYCommonUser           @"kOYCommonUser"
+ 
+
+#define userlogined  @"userLogin"
+#define userExit @"userExit"
+
+
+#define UserInfoNo @"USER_INFO_NO"//用户编号
+#define UserInfoPassword  @"USER_INFO_PASSWORD" //用户密码
+#define UserLoginStatus @"USER_LOGIN_STATUS"//用户登录状态 false true
+#define UserInfoName  @"USER_INFO_NAME"//用户姓名
+#define UserInfoParentName  @"USER_INFO_PARENT_NAME"//用户家长姓名
+#define UserInfoMobile  @"USER_INFO_MOBILE"//用户联系电话
+#define UserInfoAge @"USER_INFO_AGE"//用户年龄
+
+
+
+//notice: 公告
+//activity: 活动
+//home
+
+
+
+#define courseImageBaseUrl  @"https://121.40.151.183:443/pula-sys/app/timecourse/icon?"
+#define noticeImageBaseUrl  @"https://121.40.151.183:443/pula-sys/app/image/icon?"
+#define activityImageBaseUrl @"https://121.40.151.183:443/pula-sys/app/notice/icon?"
+#define workImageBaseUrl     @"https://121.40.151.183:443/pula-sys/app/timecoursework/icon?"
+
+
+//#define oyGoodsUrl          @"https://121.40.151.183:443/pula-sys/app/timecourse/list"
+
+#define courseUrl           @"https://121.40.151.183:443/pula-sys/app/timecourse/list"
+#define noticeUrl           @"https://121.40.151.183:443/pula-sys/app/image/listDir?sub=gonggao"
+#define activityUrl         @"https://121.40.151.183:443/pula-sys/app/notice/list"
+#define getUserActivityUrl  @"https://121.40.151.183:443/pula-sys/app/noticeorder/list?condition.studentNo=%@"
+#define getUserWorkUrl      @"https://121.40.151.183:443/pula-sys/app/timecoursework/list?condition.studentNo=%@&_json=1"
+#define loginUrl            @"https://121.40.151.183:443/pula-sys/app/studentinterface/login?loginId=%@&password=%@"
+#define getUserInfoUrl      @"https://121.40.151.183:443/pula-sys/app/studentinterface/info?loginId=%@&password=%@"
+#define changePasswordUrl   @"https://121.40.151.183:443/pula-sys/app/studentinterface/updatePassword?studentNo=%@&oldPassword=%@&newPassword=%@&_json=1"
+
+#define resetPasswordUrl    @"https://121.40.151.183:443/pula-sys/app/studentinterface/resetPassword?mobile=%@"
+
+#define getUserCourseUrl     @"https://121.40.151.183:443/pula-sys/app/timecourseorder/list?condition.studentNo=%@"
+
+
+
+#define auditionCreateUrl  @"https://121.40.151.183:443/pula-sys/app/audition/create?audition.parent=%@&audition.comments=&audition.student=%@&audition.branchNo=%@&audition.branchName=&audition.plan1=%@&audition.age=%@&audition.phone=%@&_json=1"
+
+
+
+
