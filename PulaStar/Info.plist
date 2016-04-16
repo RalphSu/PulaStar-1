@@ -18,6 +18,19 @@
 	<string>2.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>net.Shanghai.PulaStar</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx90816ac92bb628a7</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -34,6 +47,12 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>wx90816ac92bb628a7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

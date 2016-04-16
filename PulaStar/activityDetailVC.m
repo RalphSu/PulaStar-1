@@ -10,7 +10,8 @@
 
 #import "activityDetailVC.h"
 #import "activityBuyVC.h"
-
+#import "PulaShareView.h"
+#import "KShareViewManage.h"
 
 @interface activityDetailVC ()<UITableViewDelegate>
 {
@@ -23,7 +24,7 @@
     NSString *_activityUpdateTime;
     NSString *_activityIconFileId;
     NSString *_activityIconId;
-    
+    PulaShareView *_shareView;
 }
 @end
 
@@ -68,15 +69,33 @@
         
         [wSelf.navigationController popViewControllerAnimated:YES];
     }];
-    
-    /*后续会修改为分享到微信的图标*/
     /*
+     _shareView = (PulaShareView*)[[[NSBundle mainBundle] loadNibNamed:@"PulaShareView" owner:self options:nil] lastObject];
+    
     [self actionCustomRightBtnWithNrlImage:@"search" htlImage:@"search" title:@"" action:^{
-        SearchVC* vc = [[SearchVC alloc] init];
-        vc.hidesBottomBarWhenPushed = YES;
-        [wSelf.navigationController pushViewController:vc animated:YES];
+        //SearchVC* vc = [[SearchVC alloc] init];
+        //vc.hidesBottomBarWhenPushed = YES;
+        //[wSelf.navigationController pushViewController:vc animated:YES];
+        [_shareView showShareView];
     }];
     */
+    
+    NSArray * array = [KShareViewManage getShareListWithType:SharedType_WeChatCircel, SharedType_WeChatFriend, nil];
+    
+    [self actionCustomRightBtnWithNrlImage:@"search" htlImage:@"search" title:@"" action:^{
+        
+       //[KShareViewManage showViewToShareText:@"我发现了一个好玩的应用，从此妈妈再也不担心我记不住密码啦！" platform:array inViewController:self];
+        [KShareViewManage showViewToShareNews:_activityTitle
+                                      Content:@"少儿艺术创造力研发中心"
+                                        Image:[UIImage imageNamed:@"AppIcon"]
+                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@",_activityId]
+                                     platform:array
+                             inViewController:self];
+
+    }];
+    
+    
+    
     
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectMake(5,0,mainWidth - 10,mainHeight * 0.6)];

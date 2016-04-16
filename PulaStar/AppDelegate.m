@@ -8,10 +8,14 @@
 
 #import "TabCourseVC.h"
 #import "TabMineInfoVC.h"
+#import "PulaResponseView.h"
+
+//#import "WXApi.h"
 
 #define oyUseLib    0
 
 @interface AppDelegate () <UITabBarControllerDelegate>
+
 
 @end
 
@@ -313,6 +317,8 @@
 //        [[self window] setRootViewController:rootViewController];
 //        [self setCartNum];
 //    }
+    //[WXApi registerApp:@"wx90816ac92bb628a7"];
+    
     
     return YES;
 }
@@ -358,7 +364,7 @@
 #pragma mark - thidr part
 #pragma mark - umeng
 
-
+/*
 #pragma mark - JPush
 - (void)setJPush:(NSDictionary*)launchOptions
 {
@@ -387,7 +393,10 @@
     [APService setupWithOption:launchOptions];
 }
 
+*/
+
 #pragma mark - push app delegate
+/*
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Required
     [APService registerDeviceToken:deviceToken];
@@ -404,12 +413,59 @@
     // IOS 7 Support Required
     [APService handleRemoteNotification:userInfo];
     completionHandler(UIBackgroundFetchResultNewData);
-    /*
-    [[NSNotificationCenter defaultCenter] postNotificationName:kDidNotifyApns object:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"]];*/
+    
+    //[[NSNotificationCenter defaultCenter] postNotificationName:kDidNotifyApns object:[[userInfo objectForKey:@"aps"] objectForKey:@"alert"]];
 }
+*/
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
 }
+
+/*
+- (BOOL)application:(UIApplication *)application handleOpenURL:(nonnull NSURL *)url
+{
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+
+#pragma mark WXApiDelegate
+- (void)onResp:(BaseResp *)resp
+{
+    PulaResponseView *responseView = (PulaResponseView*)[[[NSBundle mainBundle] loadNibNamed:@"PulaResponseView" owner:self options:nil] lastObject];
+    //分享成功
+    if(resp.errCode == 0)
+    {
+        responseView.response = @"分享成功";
+        responseView.imgName = @"success.png";
+    }
+    else
+    {
+        //分享失败
+        responseView.response = @"分享失败";
+        responseView.imgName = @"failure.png";
+    }
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    __block CGRect responseViewFrame = responseView.frame;
+    responseViewFrame.origin.x = screenSize.width/2 - CGRectGetWidth(responseViewFrame)/2;
+    responseViewFrame.origin.y = screenSize.height/2 - CGRectGetHeight(responseViewFrame)/2;
+    responseView.frame = responseViewFrame;
+    responseView.alpha = 0;
+    [keyWindow addSubview:responseView];
+    [UIView animateWithDuration:1.5f animations:^{
+        responseView.alpha = 1.0f;
+    } completion:^(BOOL finished){
+        responseView.alpha = 0.0f;
+        [responseView removeFromSuperview];
+    }];
+}
+
+*/
+
 
 @end

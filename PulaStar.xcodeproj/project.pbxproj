@@ -47,6 +47,34 @@
 		1E5D59D01CA2C1EE00854DF8 /* MyWorkDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D59CF1CA2C1EE00854DF8 /* MyWorkDetailVC.m */; };
 		1E817A011C94FEE9003D34DA /* changePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E817A001C94FEE9003D34DA /* changePasswordVC.m */; };
 		1E817A071C9563E0003D34DA /* forgetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E817A061C9563E0003D34DA /* forgetPasswordVC.m */; };
+		1EB5EDC71CBD17EA00E7072E /* PulaShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB5EDC61CBD17EA00E7072E /* PulaShareView.m */; };
+		1EB5EDCA1CBD190400E7072E /* PulaShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB5EDC91CBD190400E7072E /* PulaShareView.xib */; };
+		1EB5EDCD1CBD219000E7072E /* PulaResponseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB5EDCC1CBD219000E7072E /* PulaResponseView.m */; };
+		1EB5EDCF1CBD226300E7072E /* PulaResponseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB5EDCE1CBD226300E7072E /* PulaResponseView.xib */; };
+		1ED570DF1CC27ED000A0932F /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570DA1CC27ED000A0932F /* ActivityView.m */; };
+		1ED570E01CC27ED000A0932F /* EditBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570DC1CC27ED000A0932F /* EditBlogViewController.m */; };
+		1ED570E11CC27ED000A0932F /* KShareViewManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570DE1CC27ED000A0932F /* KShareViewManage.m */; };
+		1ED570EB1CC27EE900A0932F /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E21CC27EE900A0932F /* add.png */; };
+		1ED570EC1CC27EE900A0932F /* at.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E31CC27EE900A0932F /* at.png */; };
+		1ED570ED1CC27EE900A0932F /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E41CC27EE900A0932F /* bar.png */; };
+		1ED570EE1CC27EE900A0932F /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E51CC27EE900A0932F /* logout.png */; };
+		1ED570EF1CC27EE900A0932F /* share_platform_qqfriends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E61CC27EE900A0932F /* share_platform_qqfriends@2x.png */; };
+		1ED570F01CC27EE900A0932F /* share_platform_sina@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E71CC27EE900A0932F /* share_platform_sina@2x.png */; };
+		1ED570F11CC27EE900A0932F /* share_platform_TencentWeibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E81CC27EE900A0932F /* share_platform_TencentWeibo@2x.png */; };
+		1ED570F21CC27EE900A0932F /* share_platform_wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570E91CC27EE900A0932F /* share_platform_wechat@2x.png */; };
+		1ED570F31CC27EE900A0932F /* share_platform_wechattimeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ED570EA1CC27EE900A0932F /* share_platform_wechattimeline@2x.png */; };
+		1ED571031CC27F2C00A0932F /* KQQChatShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570F51CC27F2C00A0932F /* KQQChatShared.m */; };
+		1ED571041CC27F2C00A0932F /* KSendMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570F71CC27F2C00A0932F /* KSendMessageView.m */; };
+		1ED571051CC27F2C00A0932F /* KSharedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570F91CC27F2C00A0932F /* KSharedMessage.m */; };
+		1ED571061CC27F2C00A0932F /* KSharedSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570FA1CC27F2C00A0932F /* KSharedSDK.m */; };
+		1ED571071CC27F2C00A0932F /* KSinaWeiboShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570FC1CC27F2C00A0932F /* KSinaWeiboShared.m */; };
+		1ED571081CC27F2C00A0932F /* KTencentWeiboShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED570FE1CC27F2C00A0932F /* KTencentWeiboShared.m */; };
+		1ED571091CC27F2C00A0932F /* KWeChatShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED571001CC27F2C00A0932F /* KWeChatShared.m */; };
+		1ED5710A1CC27F2C00A0932F /* KWeiboOauthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED571021CC27F2C00A0932F /* KWeiboOauthView.m */; };
+		1ED571111CC27F4F00A0932F /* KHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5710C1CC27F4F00A0932F /* KHelper.m */; };
+		1ED571121CC27F4F00A0932F /* KHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5710E1CC27F4F00A0932F /* KHttpManager.m */; };
+		1ED571131CC27F4F00A0932F /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED571101CC27F4F00A0932F /* UIImage+Compress.m */; };
+		1ED571191CC27F6900A0932F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED571151CC27F6900A0932F /* libWeChatSDK.a */; };
 		1EDA2C2D1CB009CD00007F48 /* bookingTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA2C2C1CB009CD00007F48 /* bookingTimePickerView.m */; };
 		1EE090701CAA9F28001397F6 /* bookingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0906F1CAA9F28001397F6 /* bookingVC.m */; };
 		1EEA02E41C93F8FB004B222B /* MineInfoLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA02E31C93F8FB004B222B /* MineInfoLoginVC.m */; };
@@ -197,7 +225,55 @@
 		1E817A021C94FEF2003D34DA /* changePasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = changePasswordVC.h; sourceTree = "<group>"; };
 		1E817A061C9563E0003D34DA /* forgetPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forgetPasswordVC.m; sourceTree = "<group>"; };
 		1E817A081C9563EA003D34DA /* forgetPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forgetPasswordVC.h; sourceTree = "<group>"; };
+		1EB5EDC61CBD17EA00E7072E /* PulaShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulaShareView.m; sourceTree = "<group>"; };
+		1EB5EDC81CBD17F600E7072E /* PulaShareView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulaShareView.h; sourceTree = "<group>"; };
+		1EB5EDC91CBD190400E7072E /* PulaShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PulaShareView.xib; sourceTree = "<group>"; };
+		1EB5EDCB1CBD218400E7072E /* PulaResponseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulaResponseView.h; sourceTree = "<group>"; };
+		1EB5EDCC1CBD219000E7072E /* PulaResponseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulaResponseView.m; sourceTree = "<group>"; };
+		1EB5EDCE1CBD226300E7072E /* PulaResponseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PulaResponseView.xib; sourceTree = "<group>"; };
 		1ECCB571FB408E02B1CE62E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1ED570D71CC27E9700A0932F /* KSharedSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSharedSDK.h; path = Utils/KSharedSDK/KSharedSDK.h; sourceTree = "<group>"; };
+		1ED570D81CC27E9700A0932F /* KSharedSDKDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSharedSDKDefine.h; path = Utils/KSharedSDK/KSharedSDKDefine.h; sourceTree = "<group>"; };
+		1ED570D91CC27ED000A0932F /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityView.h; path = Utils/KSharedSDK/View/ActivityView.h; sourceTree = "<group>"; };
+		1ED570DA1CC27ED000A0932F /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityView.m; path = Utils/KSharedSDK/View/ActivityView.m; sourceTree = "<group>"; };
+		1ED570DB1CC27ED000A0932F /* EditBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBlogViewController.h; path = Utils/KSharedSDK/View/EditBlogViewController.h; sourceTree = "<group>"; };
+		1ED570DC1CC27ED000A0932F /* EditBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBlogViewController.m; path = Utils/KSharedSDK/View/EditBlogViewController.m; sourceTree = "<group>"; };
+		1ED570DD1CC27ED000A0932F /* KShareViewManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KShareViewManage.h; path = Utils/KSharedSDK/View/KShareViewManage.h; sourceTree = "<group>"; };
+		1ED570DE1CC27ED000A0932F /* KShareViewManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KShareViewManage.m; path = Utils/KSharedSDK/View/KShareViewManage.m; sourceTree = "<group>"; };
+		1ED570E21CC27EE900A0932F /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = Utils/KSharedSDK/resources/add.png; sourceTree = "<group>"; };
+		1ED570E31CC27EE900A0932F /* at.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = at.png; path = Utils/KSharedSDK/resources/at.png; sourceTree = "<group>"; };
+		1ED570E41CC27EE900A0932F /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = Utils/KSharedSDK/resources/bar.png; sourceTree = "<group>"; };
+		1ED570E51CC27EE900A0932F /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = Utils/KSharedSDK/resources/logout.png; sourceTree = "<group>"; };
+		1ED570E61CC27EE900A0932F /* share_platform_qqfriends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_platform_qqfriends@2x.png"; path = "Utils/KSharedSDK/resources/share_platform_qqfriends@2x.png"; sourceTree = "<group>"; };
+		1ED570E71CC27EE900A0932F /* share_platform_sina@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_platform_sina@2x.png"; path = "Utils/KSharedSDK/resources/share_platform_sina@2x.png"; sourceTree = "<group>"; };
+		1ED570E81CC27EE900A0932F /* share_platform_TencentWeibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_platform_TencentWeibo@2x.png"; path = "Utils/KSharedSDK/resources/share_platform_TencentWeibo@2x.png"; sourceTree = "<group>"; };
+		1ED570E91CC27EE900A0932F /* share_platform_wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_platform_wechat@2x.png"; path = "Utils/KSharedSDK/resources/share_platform_wechat@2x.png"; sourceTree = "<group>"; };
+		1ED570EA1CC27EE900A0932F /* share_platform_wechattimeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_platform_wechattimeline@2x.png"; path = "Utils/KSharedSDK/resources/share_platform_wechattimeline@2x.png"; sourceTree = "<group>"; };
+		1ED570F41CC27F2C00A0932F /* KQQChatShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KQQChatShared.h; path = Utils/KSharedSDK/Core/KQQChatShared.h; sourceTree = "<group>"; };
+		1ED570F51CC27F2C00A0932F /* KQQChatShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KQQChatShared.m; path = Utils/KSharedSDK/Core/KQQChatShared.m; sourceTree = "<group>"; };
+		1ED570F61CC27F2C00A0932F /* KSendMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSendMessageView.h; path = Utils/KSharedSDK/Core/KSendMessageView.h; sourceTree = "<group>"; };
+		1ED570F71CC27F2C00A0932F /* KSendMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSendMessageView.m; path = Utils/KSharedSDK/Core/KSendMessageView.m; sourceTree = "<group>"; };
+		1ED570F81CC27F2C00A0932F /* KSharedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSharedMessage.h; path = Utils/KSharedSDK/Core/KSharedMessage.h; sourceTree = "<group>"; };
+		1ED570F91CC27F2C00A0932F /* KSharedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSharedMessage.m; path = Utils/KSharedSDK/Core/KSharedMessage.m; sourceTree = "<group>"; };
+		1ED570FA1CC27F2C00A0932F /* KSharedSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSharedSDK.m; path = Utils/KSharedSDK/Core/KSharedSDK.m; sourceTree = "<group>"; };
+		1ED570FB1CC27F2C00A0932F /* KSinaWeiboShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSinaWeiboShared.h; path = Utils/KSharedSDK/Core/KSinaWeiboShared.h; sourceTree = "<group>"; };
+		1ED570FC1CC27F2C00A0932F /* KSinaWeiboShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSinaWeiboShared.m; path = Utils/KSharedSDK/Core/KSinaWeiboShared.m; sourceTree = "<group>"; };
+		1ED570FD1CC27F2C00A0932F /* KTencentWeiboShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTencentWeiboShared.h; path = Utils/KSharedSDK/Core/KTencentWeiboShared.h; sourceTree = "<group>"; };
+		1ED570FE1CC27F2C00A0932F /* KTencentWeiboShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTencentWeiboShared.m; path = Utils/KSharedSDK/Core/KTencentWeiboShared.m; sourceTree = "<group>"; };
+		1ED570FF1CC27F2C00A0932F /* KWeChatShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KWeChatShared.h; path = Utils/KSharedSDK/Core/KWeChatShared.h; sourceTree = "<group>"; };
+		1ED571001CC27F2C00A0932F /* KWeChatShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KWeChatShared.m; path = Utils/KSharedSDK/Core/KWeChatShared.m; sourceTree = "<group>"; };
+		1ED571011CC27F2C00A0932F /* KWeiboOauthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KWeiboOauthView.h; path = Utils/KSharedSDK/Core/KWeiboOauthView.h; sourceTree = "<group>"; };
+		1ED571021CC27F2C00A0932F /* KWeiboOauthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KWeiboOauthView.m; path = Utils/KSharedSDK/Core/KWeiboOauthView.m; sourceTree = "<group>"; };
+		1ED5710B1CC27F4F00A0932F /* KHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHelper.h; path = Utils/KSharedSDK/Common/KHelper.h; sourceTree = "<group>"; };
+		1ED5710C1CC27F4F00A0932F /* KHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHelper.m; path = Utils/KSharedSDK/Common/KHelper.m; sourceTree = "<group>"; };
+		1ED5710D1CC27F4F00A0932F /* KHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KHttpManager.h; path = Utils/KSharedSDK/Common/KHttpManager.h; sourceTree = "<group>"; };
+		1ED5710E1CC27F4F00A0932F /* KHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KHttpManager.m; path = Utils/KSharedSDK/Common/KHttpManager.m; sourceTree = "<group>"; };
+		1ED5710F1CC27F4F00A0932F /* UIImage+Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compress.h"; path = "Utils/KSharedSDK/Common/UIImage+Compress.h"; sourceTree = "<group>"; };
+		1ED571101CC27F4F00A0932F /* UIImage+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compress.m"; path = "Utils/KSharedSDK/Common/UIImage+Compress.m"; sourceTree = "<group>"; };
+		1ED571151CC27F6900A0932F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Utils/KSharedSDK/Core/WeChat/libWeChatSDK.a; sourceTree = "<group>"; };
+		1ED571161CC27F6900A0932F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = Utils/KSharedSDK/Core/WeChat/WXApiObject.h; sourceTree = "<group>"; };
+		1ED571171CC27F6900A0932F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = Utils/KSharedSDK/Core/WeChat/WechatAuthSDK.h; sourceTree = "<group>"; };
+		1ED571181CC27F6900A0932F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = Utils/KSharedSDK/Core/WeChat/WXApi.h; sourceTree = "<group>"; };
 		1EDA2C2B1CB009C200007F48 /* bookingTimePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bookingTimePickerView.h; sourceTree = "<group>"; };
 		1EDA2C2C1CB009CD00007F48 /* bookingTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bookingTimePickerView.m; sourceTree = "<group>"; };
 		1EE0906F1CAA9F28001397F6 /* bookingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bookingVC.m; sourceTree = "<group>"; };
@@ -324,6 +400,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED571191CC27F6900A0932F /* libWeChatSDK.a in Frameworks */,
 				D03AD8561AA42E8E00D969CC /* libstdc++.dylib in Frameworks */,
 				D03AD8541AA42E8700D969CC /* CoreTelephony.framework in Frameworks */,
 				D03AD8521AA42E8200D969CC /* libsqlite3.dylib in Frameworks */,
@@ -566,6 +643,95 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		1ED570D11CC27E0A00A0932F /* KSharedSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1ED570D71CC27E9700A0932F /* KSharedSDK.h */,
+				1ED570D81CC27E9700A0932F /* KSharedSDKDefine.h */,
+				1ED570D61CC27E7F00A0932F /* View */,
+				1ED570D51CC27E7400A0932F /* resources */,
+				1ED570D31CC27E5500A0932F /* Core */,
+				1ED570D21CC27E2300A0932F /* Common */,
+			);
+			name = KSharedSDK;
+			sourceTree = "<group>";
+		};
+		1ED570D21CC27E2300A0932F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1ED5710B1CC27F4F00A0932F /* KHelper.h */,
+				1ED5710C1CC27F4F00A0932F /* KHelper.m */,
+				1ED5710D1CC27F4F00A0932F /* KHttpManager.h */,
+				1ED5710E1CC27F4F00A0932F /* KHttpManager.m */,
+				1ED5710F1CC27F4F00A0932F /* UIImage+Compress.h */,
+				1ED571101CC27F4F00A0932F /* UIImage+Compress.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		1ED570D31CC27E5500A0932F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1ED571141CC27F5500A0932F /* wechat */,
+				1ED570F41CC27F2C00A0932F /* KQQChatShared.h */,
+				1ED570F51CC27F2C00A0932F /* KQQChatShared.m */,
+				1ED570F61CC27F2C00A0932F /* KSendMessageView.h */,
+				1ED570F71CC27F2C00A0932F /* KSendMessageView.m */,
+				1ED570F81CC27F2C00A0932F /* KSharedMessage.h */,
+				1ED570F91CC27F2C00A0932F /* KSharedMessage.m */,
+				1ED570FA1CC27F2C00A0932F /* KSharedSDK.m */,
+				1ED570FB1CC27F2C00A0932F /* KSinaWeiboShared.h */,
+				1ED570FC1CC27F2C00A0932F /* KSinaWeiboShared.m */,
+				1ED570FD1CC27F2C00A0932F /* KTencentWeiboShared.h */,
+				1ED570FE1CC27F2C00A0932F /* KTencentWeiboShared.m */,
+				1ED570FF1CC27F2C00A0932F /* KWeChatShared.h */,
+				1ED571001CC27F2C00A0932F /* KWeChatShared.m */,
+				1ED571011CC27F2C00A0932F /* KWeiboOauthView.h */,
+				1ED571021CC27F2C00A0932F /* KWeiboOauthView.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1ED570D51CC27E7400A0932F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1ED570E21CC27EE900A0932F /* add.png */,
+				1ED570E31CC27EE900A0932F /* at.png */,
+				1ED570E41CC27EE900A0932F /* bar.png */,
+				1ED570E51CC27EE900A0932F /* logout.png */,
+				1ED570E61CC27EE900A0932F /* share_platform_qqfriends@2x.png */,
+				1ED570E71CC27EE900A0932F /* share_platform_sina@2x.png */,
+				1ED570E81CC27EE900A0932F /* share_platform_TencentWeibo@2x.png */,
+				1ED570E91CC27EE900A0932F /* share_platform_wechat@2x.png */,
+				1ED570EA1CC27EE900A0932F /* share_platform_wechattimeline@2x.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		1ED570D61CC27E7F00A0932F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ED570D91CC27ED000A0932F /* ActivityView.h */,
+				1ED570DA1CC27ED000A0932F /* ActivityView.m */,
+				1ED570DB1CC27ED000A0932F /* EditBlogViewController.h */,
+				1ED570DC1CC27ED000A0932F /* EditBlogViewController.m */,
+				1ED570DD1CC27ED000A0932F /* KShareViewManage.h */,
+				1ED570DE1CC27ED000A0932F /* KShareViewManage.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1ED571141CC27F5500A0932F /* wechat */ = {
+			isa = PBXGroup;
+			children = (
+				1ED571151CC27F6900A0932F /* libWeChatSDK.a */,
+				1ED571161CC27F6900A0932F /* WXApiObject.h */,
+				1ED571171CC27F6900A0932F /* WechatAuthSDK.h */,
+				1ED571181CC27F6900A0932F /* WXApi.h */,
+			);
+			name = wechat;
+			sourceTree = "<group>";
+		};
 		55CD44B297906923C3C595F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,10 +820,16 @@
 		D03BA5361A9DD9300053B477 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1EB5EDC91CBD190400E7072E /* PulaShareView.xib */,
 				D03BA5371A9DD9550053B477 /* BaseNoDataView.h */,
 				D03BA5381A9DD9550053B477 /* BaseNoDataView.m */,
 				D03144481AA06F8C00E00E2A /* BaseLoadView.h */,
 				D03144491AA06F8C00E00E2A /* BaseLoadView.m */,
+				1EB5EDC61CBD17EA00E7072E /* PulaShareView.m */,
+				1EB5EDC81CBD17F600E7072E /* PulaShareView.h */,
+				1EB5EDCB1CBD218400E7072E /* PulaResponseView.h */,
+				1EB5EDCC1CBD219000E7072E /* PulaResponseView.m */,
+				1EB5EDCE1CBD226300E7072E /* PulaResponseView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -723,6 +895,7 @@
 		D07DC3741A94D13C00852F5C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1ED570D11CC27E0A00A0932F /* KSharedSDK */,
 				D02DEFAD1AE3EFB400FA18FC /* ASProgressPopUpView */,
 				D038A40E1AA6C2FC00A06AE7 /* LMComBox */,
 				D03AD83B1AA42CE400D969CC /* UMeng */,
@@ -1030,7 +1203,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03AD85E1AA43E2C00D969CC /* PushConfig.plist in Resources */,
+				1ED570EF1CC27EE900A0932F /* share_platform_qqfriends@2x.png in Resources */,
+				1ED570F31CC27EE900A0932F /* share_platform_wechattimeline@2x.png in Resources */,
+				1ED570EC1CC27EE900A0932F /* at.png in Resources */,
+				1EB5EDCF1CBD226300E7072E /* PulaResponseView.xib in Resources */,
+				1ED570F11CC27EE900A0932F /* share_platform_TencentWeibo@2x.png in Resources */,
 				D0C47C591A94436800016C90 /* Images.xcassets in Resources */,
+				1ED570EB1CC27EE900A0932F /* add.png in Resources */,
+				1ED570F01CC27EE900A0932F /* share_platform_sina@2x.png in Resources */,
+				1ED570F21CC27EE900A0932F /* share_platform_wechat@2x.png in Resources */,
+				1EB5EDCA1CBD190400E7072E /* PulaShareView.xib in Resources */,
+				1ED570ED1CC27EE900A0932F /* bar.png in Resources */,
+				1ED570EE1CC27EE900A0932F /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1092,6 +1276,7 @@
 				D0C47C511A94436800016C90 /* AppDelegate.m in Sources */,
 				1E817A011C94FEE9003D34DA /* changePasswordVC.m in Sources */,
 				1EFB0B941C9E820A00275418 /* MyWorkVC.m in Sources */,
+				1ED571041CC27F2C00A0932F /* KSendMessageView.m in Sources */,
 				1E817A071C9563E0003D34DA /* forgetPasswordVC.m in Sources */,
 				1EDA2C2D1CB009CD00007F48 /* bookingTimePickerView.m in Sources */,
 				D07DC3771A94D15A00852F5C /* XBToastManager.m in Sources */,
@@ -1103,7 +1288,11 @@
 				D0C47C981A94473000016C90 /* XBHttpClient.m in Sources */,
 				D0C47C901A94473000016C90 /* XBApi.m in Sources */,
 				D0C47C921A94473000016C90 /* RIButtonItem.m in Sources */,
+				1ED570E01CC27ED000A0932F /* EditBlogViewController.m in Sources */,
+				1ED571081CC27F2C00A0932F /* KTencentWeiboShared.m in Sources */,
+				1ED571061CC27F2C00A0932F /* KSharedSDK.m in Sources */,
 				1E05F3A71C8B12880075E22E /* buyActivityDetailTopItem.m in Sources */,
+				1ED571051CC27F2C00A0932F /* KSharedMessage.m in Sources */,
 				1EEA02E61C93F918004B222B /* MyLoginModel.m in Sources */,
 				D02DEFB31AE3EFB400FA18FC /* ASProgressPopUpView.m in Sources */,
 				1EFB0B971C9E85F200275418 /* AllMyWorkView.m in Sources */,
@@ -1118,6 +1307,8 @@
 				1E05F37C1C8AC3D90075E22E /* TabActivityVC.m in Sources */,
 				D0C47C911A94473000016C90 /* NSString+Size.m in Sources */,
 				1E05F3721C8AB3710075E22E /* buyCourseDetailPriceInfoItem.m in Sources */,
+				1ED571121CC27F4F00A0932F /* KHttpManager.m in Sources */,
+				1ED5710A1CC27F2C00A0932F /* KWeiboOauthView.m in Sources */,
 				1E1198C61C8F07F50056EFD3 /* TabMineInfoVC.m in Sources */,
 				1E02C8641C870DFD00213403 /* AllCourseItemCell.m in Sources */,
 				1EFB0B8C1C9E5C1500275418 /* AllMyActivityView.m in Sources */,
@@ -1128,11 +1319,14 @@
 				1E02C8601C870DC500213403 /* AllCourseView.m in Sources */,
 				D0C47C9A1A94473000016C90 /* XBBaseVC.m in Sources */,
 				D0C47C961A94473000016C90 /* UIImage+RenderedImage.m in Sources */,
+				1EB5EDC71CBD17EA00E7072E /* PulaShareView.m in Sources */,
 				D038A4131AA6C2FC00A06AE7 /* LMComBoxView.m in Sources */,
 				1E1198C01C8F07120056EFD3 /* MineMainInfoMiddleItem.m in Sources */,
 				D0F0CF321AA0074300652FF4 /* PulaBaseNavVC.m in Sources */,
+				1EB5EDCD1CBD219000E7072E /* PulaResponseView.m in Sources */,
 				1E05F3A11C8B0B170075E22E /* activityModel.m in Sources */,
 				D07DC3881A95A74600852F5C /* XBHttpCache.m in Sources */,
+				1ED570DF1CC27ED000A0932F /* ActivityView.m in Sources */,
 				1E05F36F1C8AAC010075E22E /* buyCouseDetailTopItem.m in Sources */,
 				1E05F3A51C8B0C1C0075E22E /* activityBuyVC.m in Sources */,
 				D03B0A7A1A9EBC9F00E2EBF2 /* XBDbVersionTable.m in Sources */,
@@ -1141,8 +1335,11 @@
 				D0C47C941A94473000016C90 /* UIButton+StringTag.m in Sources */,
 				D07DC39D1A95CB3900852F5C /* UIView+StringTag.m in Sources */,
 				1E37123A1C9838C400AB56C6 /* aboutUsVC.m in Sources */,
+				1ED570E11CC27ED000A0932F /* KShareViewManage.m in Sources */,
+				1ED571091CC27F2C00A0932F /* KWeChatShared.m in Sources */,
 				1E05F3801C8AC40D0075E22E /* TabNoticeVC.m in Sources */,
 				1E05F3861C8ACE390075E22E /* AllNoticeModel.m in Sources */,
+				1ED571071CC27F2C00A0932F /* KSinaWeiboShared.m in Sources */,
 				D0C47C991A94473000016C90 /* XBParser.m in Sources */,
 				1EFB0B8E1C9E5CC800275418 /* AllMyActivityItemCell.m in Sources */,
 				1E05F3981C8AEE090075E22E /* AllActivityItemCell.m in Sources */,
@@ -1154,13 +1351,16 @@
 				1EEA02EA1C941CCC004B222B /* loginActionVC.m in Sources */,
 				1E02C8691C8724EF00213403 /* courseDetailVC.m in Sources */,
 				1E02C85A1C870D1C00213403 /* TabCourseVC.m in Sources */,
+				1ED571131CC27F4F00A0932F /* UIImage+Compress.m in Sources */,
 				1E05F3881C8AD35C0075E22E /* AllNoticeItemCell.m in Sources */,
 				1E02C85E1C870D9400213403 /* AllCourseModel.m in Sources */,
+				1ED571111CC27F4F00A0932F /* KHelper.m in Sources */,
 				D031444A1AA06F8C00E00E2A /* BaseLoadView.m in Sources */,
 				D0C47C971A94473000016C90 /* UIImageView+DotLine.m in Sources */,
 				1E1198C31C8F07530056EFD3 /* MineMainInfoBottomItem.m in Sources */,
 				1E05F39B1C8B0AAF0075E22E /* activityDetailCell.m in Sources */,
 				D038A4141AA6C2FC00A06AE7 /* LMContainsLMComboxScrollView.m in Sources */,
+				1ED571031CC27F2C00A0932F /* KQQChatShared.m in Sources */,
 				D07DC39A1A95CAD900852F5C /* UITableViewCell+SeparatorLine.m in Sources */,
 				1EE090701CAA9F28001397F6 /* bookingVC.m in Sources */,
 				1E1D5D501C9AD858002D5C7D /* MyBasicInfoVC.m in Sources */,
@@ -1281,8 +1481,10 @@
 					"$(PROJECT_DIR)/PulaStar/Utils/Jpush",
 					"$(PROJECT_DIR)/PulaStar/Utils/UMeng/feedback",
 					"$(PROJECT_DIR)/PulaStar/Utils/UMeng",
+					"$(PROJECT_DIR)/PulaStar/Utils/WeChat",
+					"$(PROJECT_DIR)/PulaStar/Utils/KSharedSDK/Core/WeChat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.fanwa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Shanghai.PulaStar;
 				PRODUCT_NAME = PulaStar;
 				PROVISIONING_PROFILE = "";
 			};
@@ -1305,8 +1507,10 @@
 					"$(PROJECT_DIR)/PulaStar/Utils/Jpush",
 					"$(PROJECT_DIR)/PulaStar/Utils/UMeng/feedback",
 					"$(PROJECT_DIR)/PulaStar/Utils/UMeng",
+					"$(PROJECT_DIR)/PulaStar/Utils/WeChat",
+					"$(PROJECT_DIR)/PulaStar/Utils/KSharedSDK/Core/WeChat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.fanwa.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.Shanghai.PulaStar;
 				PRODUCT_NAME = PulaStar;
 				PROVISIONING_PROFILE = "";
 			};
