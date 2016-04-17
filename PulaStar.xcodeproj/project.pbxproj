@@ -1165,7 +1165,7 @@
 				TargetAttributes = {
 					D0C47C471A94436800016C90 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 3JFGQHBZ48;
+						DevelopmentTeam = HS22F63B65;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1472,6 +1472,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "PulaStar/one-prefix.pch";
 				INFOPLIST_FILE = PulaStar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1498,6 +1499,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "PulaStar/one-prefix.pch";
 				INFOPLIST_FILE = PulaStar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

@@ -25,7 +25,10 @@
     HYActivityView *activityView = [[HYActivityView alloc]initWithTitle:shareToTitle referView:viewController.view];
     
     //横屏会变成一行6个, 竖屏无法一行同时显示6个, 会自动使用默认一行4个的设置.
-    activityView.numberOfButtonPerLine = 2;
+    
+    activityView.numberOfButtonPerLine = (([platform count] < 4) ?[platform count]:4);
+    
+    
     ButtonView *bv;
     
     for (NSNumber *type in platform) {

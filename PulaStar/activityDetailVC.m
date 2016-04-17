@@ -84,10 +84,10 @@
     
     [self actionCustomRightBtnWithNrlImage:@"search" htlImage:@"search" title:@"" action:^{
         
-       //[KShareViewManage showViewToShareText:@"我发现了一个好玩的应用，从此妈妈再也不担心我记不住密码啦！" platform:array inViewController:self];
+
         [KShareViewManage showViewToShareNews:_activityTitle
-                                      Content:@"少儿艺术创造力研发中心"
-                                        Image:[UIImage imageNamed:@"AppIcon"]
+                                      Content:@"普拉星球 少儿艺术创造力研发中心"
+                                        Image:[UIImage imageNamed:@"pulalogo"]
                                           Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@",_activityId]
                                      platform:array
                              inViewController:self];
