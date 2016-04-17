@@ -82,10 +82,10 @@
     
     NSArray * array = [KShareViewManage getShareListWithType:SharedType_WeChatCircel, SharedType_WeChatFriend, nil];
     
-    [self actionCustomRightBtnWithNrlImage:@"search" htlImage:@"search" title:@"" action:^{
+    [self actionCustomRightBtnWithNrlImage:@"share" htlImage:@"share" title:@"" action:^{
         
 
-        [KShareViewManage showViewToShareNews:_activityTitle
+        [KShareViewManage showViewToShareNews:[NSString stringWithFormat:@"%@活动",_activityTitle]
                                       Content:@"普拉星球 少儿艺术创造力研发中心"
                                         Image:[UIImage imageNamed:@"pulalogo"]
                                           Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@",_activityId]

@@ -88,6 +88,12 @@
 		1EFB0B971C9E85F200275418 /* AllMyWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB0B961C9E85F200275418 /* AllMyWorkView.m */; };
 		1EFB0B9A1C9E863100275418 /* AllMyWorkItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB0B991C9E863100275418 /* AllMyWorkItemCell.m */; };
 		1EFB0B9E1C9E880C00275418 /* AllMyWorkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB0B9D1C9E880C00275418 /* AllMyWorkModel.m */; };
+		1EFFB7B21CC366D9005E9CB6 /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB7AC1CC366D9005E9CB6 /* WXApiRequestHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EFFB7B31CC366D9005E9CB6 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB7AF1CC366D9005E9CB6 /* WXApiManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EFFB7B41CC366D9005E9CB6 /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB7B11CC366D9005E9CB6 /* WXApiResponseHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EFFB7BC1CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB7B71CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EFFB7BD1CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB7B91CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1EFFB7BE1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFFB7BB1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D02DEFB21AE3EFB400FA18FC /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DEFAF1AE3EFB400FA18FC /* ASPopUpView.m */; };
 		D02DEFB31AE3EFB400FA18FC /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DEFB11AE3EFB400FA18FC /* ASProgressPopUpView.m */; };
 		D031444A1AA06F8C00E00E2A /* BaseLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03144491AA06F8C00E00E2A /* BaseLoadView.m */; };
@@ -300,6 +306,19 @@
 		1EFB0B9B1C9E863A00275418 /* AllMyWorkItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllMyWorkItemCell.h; sourceTree = "<group>"; };
 		1EFB0B9C1C9E880000275418 /* AllMyWorkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllMyWorkModel.h; sourceTree = "<group>"; };
 		1EFB0B9D1C9E880C00275418 /* AllMyWorkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMyWorkModel.m; sourceTree = "<group>"; };
+		1EFFB7AC1CC366D9005E9CB6 /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXApiRequestHandler.m; path = Utils/WeChatHelper/WXApiRequestHandler.m; sourceTree = "<group>"; };
+		1EFFB7AD1CC366D9005E9CB6 /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiRequestHandler.h; path = Utils/WeChatHelper/WXApiRequestHandler.h; sourceTree = "<group>"; };
+		1EFFB7AE1CC366D9005E9CB6 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiManager.h; path = Utils/WeChatHelper/WXApiManager.h; sourceTree = "<group>"; };
+		1EFFB7AF1CC366D9005E9CB6 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXApiManager.m; path = Utils/WeChatHelper/WXApiManager.m; sourceTree = "<group>"; };
+		1EFFB7B01CC366D9005E9CB6 /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiResponseHandler.h; path = Utils/WeChatHelper/WXApiResponseHandler.h; sourceTree = "<group>"; };
+		1EFFB7B11CC366D9005E9CB6 /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXApiResponseHandler.m; path = Utils/WeChatHelper/WXApiResponseHandler.m; sourceTree = "<group>"; };
+		1EFFB7B51CC366E6005E9CB6 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Utils/WeChatHelper/Helper/Constant.h; sourceTree = "<group>"; };
+		1EFFB7B61CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; path = "Utils/WeChatHelper/Helper/GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		1EFFB7B71CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; path = "Utils/WeChatHelper/Helper/GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		1EFFB7B81CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; path = "Utils/WeChatHelper/Helper/SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		1EFFB7B91CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; path = "Utils/WeChatHelper/Helper/SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		1EFFB7BA1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WXMediaMessage+messageConstruct.h"; path = "Utils/WeChatHelper/Helper/WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		1EFFB7BB1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WXMediaMessage+messageConstruct.m"; path = "Utils/WeChatHelper/Helper/WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
 		9D8C87B3E3AA760064E1E31D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D02DEFAE1AE3EFB400FA18FC /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
 		D02DEFAF1AE3EFB400FA18FC /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
@@ -732,6 +751,34 @@
 			name = wechat;
 			sourceTree = "<group>";
 		};
+		1EFFB7AA1CC36633005E9CB6 /* WeChatHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1EFFB7AC1CC366D9005E9CB6 /* WXApiRequestHandler.m */,
+				1EFFB7AD1CC366D9005E9CB6 /* WXApiRequestHandler.h */,
+				1EFFB7AE1CC366D9005E9CB6 /* WXApiManager.h */,
+				1EFFB7AF1CC366D9005E9CB6 /* WXApiManager.m */,
+				1EFFB7B01CC366D9005E9CB6 /* WXApiResponseHandler.h */,
+				1EFFB7B11CC366D9005E9CB6 /* WXApiResponseHandler.m */,
+				1EFFB7AB1CC366C6005E9CB6 /* Helper */,
+			);
+			name = WeChatHelper;
+			sourceTree = "<group>";
+		};
+		1EFFB7AB1CC366C6005E9CB6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1EFFB7B51CC366E6005E9CB6 /* Constant.h */,
+				1EFFB7B61CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				1EFFB7B71CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				1EFFB7B81CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+				1EFFB7B91CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				1EFFB7BA1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.h */,
+				1EFFB7BB1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		55CD44B297906923C3C595F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -895,6 +942,7 @@
 		D07DC3741A94D13C00852F5C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1EFFB7AA1CC36633005E9CB6 /* WeChatHelper */,
 				1ED570D11CC27E0A00A0932F /* KSharedSDK */,
 				D02DEFAD1AE3EFB400FA18FC /* ASProgressPopUpView */,
 				D038A40E1AA6C2FC00A06AE7 /* LMComBox */,
@@ -1309,11 +1357,13 @@
 				1E05F3721C8AB3710075E22E /* buyCourseDetailPriceInfoItem.m in Sources */,
 				1ED571121CC27F4F00A0932F /* KHttpManager.m in Sources */,
 				1ED5710A1CC27F2C00A0932F /* KWeiboOauthView.m in Sources */,
+				1EFFB7B41CC366D9005E9CB6 /* WXApiResponseHandler.m in Sources */,
 				1E1198C61C8F07F50056EFD3 /* TabMineInfoVC.m in Sources */,
 				1E02C8641C870DFD00213403 /* AllCourseItemCell.m in Sources */,
 				1EFB0B8C1C9E5C1500275418 /* AllMyActivityView.m in Sources */,
 				1E1198BD1C8F06F10056EFD3 /* MineMainInfoTopItem.m in Sources */,
 				D0C47C951A94473000016C90 /* UIColor+hexColor.m in Sources */,
+				1EFFB7BD1CC366E6005E9CB6 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				1E06DB261C89B5DB005010AD /* courseBuyVC.m in Sources */,
 				D03B0A7E1A9EBDF400E2EBF2 /* XBDbHandler.m in Sources */,
 				1E02C8601C870DC500213403 /* AllCourseView.m in Sources */,
@@ -1323,9 +1373,11 @@
 				D038A4131AA6C2FC00A06AE7 /* LMComBoxView.m in Sources */,
 				1E1198C01C8F07120056EFD3 /* MineMainInfoMiddleItem.m in Sources */,
 				D0F0CF321AA0074300652FF4 /* PulaBaseNavVC.m in Sources */,
+				1EFFB7B31CC366D9005E9CB6 /* WXApiManager.m in Sources */,
 				1EB5EDCD1CBD219000E7072E /* PulaResponseView.m in Sources */,
 				1E05F3A11C8B0B170075E22E /* activityModel.m in Sources */,
 				D07DC3881A95A74600852F5C /* XBHttpCache.m in Sources */,
+				1EFFB7BC1CC366E6005E9CB6 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				1ED570DF1CC27ED000A0932F /* ActivityView.m in Sources */,
 				1E05F36F1C8AAC010075E22E /* buyCouseDetailTopItem.m in Sources */,
 				1E05F3A51C8B0C1C0075E22E /* activityBuyVC.m in Sources */,
@@ -1337,6 +1389,7 @@
 				1E37123A1C9838C400AB56C6 /* aboutUsVC.m in Sources */,
 				1ED570E11CC27ED000A0932F /* KShareViewManage.m in Sources */,
 				1ED571091CC27F2C00A0932F /* KWeChatShared.m in Sources */,
+				1EFFB7BE1CC366E6005E9CB6 /* WXMediaMessage+messageConstruct.m in Sources */,
 				1E05F3801C8AC40D0075E22E /* TabNoticeVC.m in Sources */,
 				1E05F3861C8ACE390075E22E /* AllNoticeModel.m in Sources */,
 				1ED571071CC27F2C00A0932F /* KSinaWeiboShared.m in Sources */,
@@ -1362,6 +1415,7 @@
 				D038A4141AA6C2FC00A06AE7 /* LMContainsLMComboxScrollView.m in Sources */,
 				1ED571031CC27F2C00A0932F /* KQQChatShared.m in Sources */,
 				D07DC39A1A95CAD900852F5C /* UITableViewCell+SeparatorLine.m in Sources */,
+				1EFFB7B21CC366D9005E9CB6 /* WXApiRequestHandler.m in Sources */,
 				1EE090701CAA9F28001397F6 /* bookingVC.m in Sources */,
 				1E1D5D501C9AD858002D5C7D /* MyBasicInfoVC.m in Sources */,
 				1EFB0B9E1C9E880C00275418 /* AllMyWorkModel.m in Sources */,
@@ -1470,6 +1524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -1497,6 +1552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;

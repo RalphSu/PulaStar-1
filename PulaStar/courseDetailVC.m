@@ -10,7 +10,7 @@
 
 #import "courseDetailVC.h"
 #import "courseBuyVC.h"
-
+#import "KShareViewManage.h"
 
 @interface courseDetailVC ()<UITableViewDelegate>
 {
@@ -66,6 +66,22 @@
         [wSelf.navigationController pushViewController:vc animated:YES];
     }];
     */
+    
+    NSArray * array = [KShareViewManage getShareListWithType:SharedType_WeChatCircel, SharedType_WeChatFriend, nil];
+    
+    [self actionCustomRightBtnWithNrlImage:@"share" htlImage:@"share" title:@"" action:^{
+        
+        
+        [KShareViewManage showViewToShareNews:[NSString stringWithFormat:@"%@课程",_courseName]
+                                      Content:@"普拉星球 少儿艺术创造力研发中心"
+                                        Image:[UIImage imageNamed:@"pulalogo"]
+                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/timecourse/appshow?id=%@&no=%@",_searchId,_courseNo]
+                                     platform:array
+                             inViewController:self];
+        
+    }];
+    
+    
     
 
     UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectMake(5,0,mainWidth - 10,mainHeight * 0.6)];

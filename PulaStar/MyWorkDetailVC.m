@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "MyWorkDetailVC.h"
-
+#import "KShareViewManage.h"
 
 @interface MyWorkDetailVC ()
 {
@@ -120,6 +120,27 @@
     
     
     [self.view addSubview:levelImage];
+    
+    
+    
+    NSString* userName= [[NSUserDefaults standardUserDefaults] objectForKey:UserInfoName];
+    
+    
+    NSArray * array = [KShareViewManage getShareListWithType:SharedType_WeChatCircel, SharedType_WeChatFriend, nil];
+    
+    [self actionCustomRightBtnWithNrlImage:@"share" htlImage:@"share" title:@"" action:^{
+        
+        
+        [KShareViewManage showViewToShareNews:[NSString stringWithFormat:@"%@小朋友作品",userName]
+                                      Content:@"普拉星球 少儿艺术创造力研发中心"
+                                        Image:[UIImage imageNamed:@"pulalogo"]
+                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/timecoursework/appshow?no=%@",workInfoNo]
+                                     platform:array
+                             inViewController:self];
+        
+    }];
+    
+
 
     
 }

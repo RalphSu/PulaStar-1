@@ -87,7 +87,8 @@
     [buyButton setBackgroundColor:ACTIVITY_NAVBAR_COLOR];
     [buyButton setTitle:@"确 认 支 付" forState:UIControlStateNormal];
     buyButton.layer.cornerRadius = 5;
-    //[btnCalc addTarget:self action:@selector(btnCalcAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [buyButton addTarget:self action:@selector(buyActivityAction) forControlEvents:UIControlEventTouchUpInside];
     
     
     [self.view addSubview:buyButton];
@@ -243,38 +244,16 @@
     return cell;
 }
 
-/*
- - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
- {
- [tableView deselectRowAtIndexPath:indexPath animated:YES];
- 
- 
- if (indexPath.section == 1)
- {
- 
- if(indexPath.row == 0)
- {
- ProductBuyListVC* vc = [[ProductBuyListVC alloc] initWithCodeId:[proDetail.Rows2.codeID intValue]];
- vc.hidesBottomBarWhenPushed = YES;
- [self.navigationController pushViewController:vc animated:YES];
- }
- else if(indexPath.row ==1)
- {
- ShowOrderListVC* vc = [[ShowOrderListVC alloc] initWithGoodsId:_goodsId];
- vc.hidesBottomBarWhenPushed = YES;
- [self.navigationController pushViewController:vc animated:YES];
- }
- else if(indexPath.row == 2)
- {
- ProductLotteryVC* vc = [[ProductLotteryVC alloc] initWithGoods:_goodsId codeId:[proDetail.Rows2.codeID intValue] - 1];
- vc.hidesBottomBarWhenPushed = YES;
- [self.navigationController pushViewController:vc animated:YES];
- }
- }
- 
- 
- }
- */
+
+#pragma mark - action
+
+- (void)buyActivityAction
+{
+    
+        
+}
+
+
 
 
 
