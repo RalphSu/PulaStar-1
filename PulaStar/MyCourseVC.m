@@ -331,10 +331,10 @@
             
             expireDate.text = updateTime;
             
-            systemCourse.text =  [NSString stringWithFormat:@"总课券%@次,已使用%@次!",paidCount,usedCount];
-            specialCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次!",specialCourseCount,usedSpecialCourseCount];
-            gongfangCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次!",gongFangCount,usedGongFangCount];
-            memActCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次!",huoDongCount,usedHuodongCount];
+            systemCourse.text =  [NSString stringWithFormat:@"总课券%@次,已使用%@次",paidCount,usedCount];
+            specialCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次",specialCourseCount,usedSpecialCourseCount];
+            gongfangCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次",gongFangCount,usedGongFangCount];
+            memActCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次",huoDongCount,usedHuodongCount];
             
             NSString *userLevelTitle = [NSString stringWithFormat:@"您的等级为:%d级",userLevel ];
             
@@ -362,13 +362,13 @@
         {
             [[XBToastManager ShardInstance] hideprogress];
             
-            [[XBToastManager ShardInstance] showtoast:@"获取用户信息失败，请重新登录"];
+            [[XBToastManager ShardInstance] showtoast:@"获取课程信息失败，请重新登录"];
             
         }
     } failure:^(NSError* error){
         
         [[XBToastManager ShardInstance] hideprogress];
-        [[XBToastManager ShardInstance] showtoast:@"获取用户信息失败,请查看网络"];
+        [[XBToastManager ShardInstance] showtoast:@"获取课程信息失败,请查看网络"];
     }];
     
 }

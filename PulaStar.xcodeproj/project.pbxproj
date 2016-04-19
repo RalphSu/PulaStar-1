@@ -42,6 +42,9 @@
 		1E19D67E1CB89E1900F735A9 /* PulaStarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E19D67D1CB89E1900F735A9 /* PulaStarTests.m */; };
 		1E19D6801CB89E2300F735A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E19D67F1CB89E2300F735A9 /* Info.plist */; };
 		1E1D5D501C9AD858002D5C7D /* MyBasicInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D5D4F1C9AD858002D5C7D /* MyBasicInfoVC.m */; };
+		1E2893781CC527DF00CD1FBA /* payRequsestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2893731CC527DF00CD1FBA /* payRequsestHandler.m */; };
+		1E2893791CC527DF00CD1FBA /* WXUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2893751CC527DF00CD1FBA /* WXUtil.m */; };
+		1E28937A1CC527DF00CD1FBA /* ApiXml.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2893771CC527DF00CD1FBA /* ApiXml.m */; };
 		1E2DC93A1C9CD61C000C619A /* MyCourseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DC9391C9CD61C000C619A /* MyCourseVC.m */; };
 		1E37123A1C9838C400AB56C6 /* aboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3712391C9838C400AB56C6 /* aboutUsVC.m */; };
 		1E5D59D01CA2C1EE00854DF8 /* MyWorkDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5D59CF1CA2C1EE00854DF8 /* MyWorkDetailVC.m */; };
@@ -221,6 +224,12 @@
 		1E19D67F1CB89E2300F735A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E1D5D4F1C9AD858002D5C7D /* MyBasicInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBasicInfoVC.m; sourceTree = "<group>"; };
 		1E1D5D511C9AD861002D5C7D /* MyBasicInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBasicInfoVC.h; sourceTree = "<group>"; };
+		1E2893721CC527DF00CD1FBA /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = payRequsestHandler.h; path = Utils/WeChatPay/payRequsestHandler.h; sourceTree = "<group>"; };
+		1E2893731CC527DF00CD1FBA /* payRequsestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = payRequsestHandler.m; path = Utils/WeChatPay/payRequsestHandler.m; sourceTree = "<group>"; };
+		1E2893741CC527DF00CD1FBA /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXUtil.h; path = Utils/WeChatPay/WXUtil.h; sourceTree = "<group>"; };
+		1E2893751CC527DF00CD1FBA /* WXUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXUtil.m; path = Utils/WeChatPay/WXUtil.m; sourceTree = "<group>"; };
+		1E2893761CC527DF00CD1FBA /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiXml.h; path = Utils/WeChatPay/ApiXml.h; sourceTree = "<group>"; };
+		1E2893771CC527DF00CD1FBA /* ApiXml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiXml.m; path = Utils/WeChatPay/ApiXml.m; sourceTree = "<group>"; };
 		1E2DC9381C9CD60E000C619A /* MyCourseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCourseVC.h; sourceTree = "<group>"; };
 		1E2DC9391C9CD61C000C619A /* MyCourseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCourseVC.m; sourceTree = "<group>"; };
 		1E3712381C9838B900AB56C6 /* aboutUsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aboutUsVC.h; sourceTree = "<group>"; };
@@ -662,6 +671,19 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		1E2893711CC526D100CD1FBA /* WeChatPay */ = {
+			isa = PBXGroup;
+			children = (
+				1E2893721CC527DF00CD1FBA /* payRequsestHandler.h */,
+				1E2893731CC527DF00CD1FBA /* payRequsestHandler.m */,
+				1E2893741CC527DF00CD1FBA /* WXUtil.h */,
+				1E2893751CC527DF00CD1FBA /* WXUtil.m */,
+				1E2893761CC527DF00CD1FBA /* ApiXml.h */,
+				1E2893771CC527DF00CD1FBA /* ApiXml.m */,
+			);
+			name = WeChatPay;
+			sourceTree = "<group>";
+		};
 		1ED570D11CC27E0A00A0932F /* KSharedSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -942,6 +964,7 @@
 		D07DC3741A94D13C00852F5C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1E2893711CC526D100CD1FBA /* WeChatPay */,
 				1EFFB7AA1CC36633005E9CB6 /* WeChatHelper */,
 				1ED570D11CC27E0A00A0932F /* KSharedSDK */,
 				D02DEFAD1AE3EFB400FA18FC /* ASProgressPopUpView */,
@@ -1315,6 +1338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E1198BB1C8F062F0056EFD3 /* MineMainInfoVC.m in Sources */,
+				1E2893781CC527DF00CD1FBA /* payRequsestHandler.m in Sources */,
 				1E05F3AB1C8B12C00075E22E /* buyActivityDetailPriceInfoItem.m in Sources */,
 				1EFB0B9A1C9E863100275418 /* AllMyWorkItemCell.m in Sources */,
 				D03BA5391A9DD9550053B477 /* BaseNoDataView.m in Sources */,
@@ -1349,6 +1373,7 @@
 				1E05F3821C8AC5860075E22E /* AllNoticeView.m in Sources */,
 				D07DC3A91A95D18000852F5C /* PulaStarAdPageView.m in Sources */,
 				D0C47C931A94473000016C90 /* UIAlertView+Blocks.m in Sources */,
+				1E28937A1CC527DF00CD1FBA /* ApiXml.m in Sources */,
 				D07DC3931A95B4A700852F5C /* PulaBaseParser.m in Sources */,
 				1E05F36C1C8A8CD90075E22E /* coursePayMethodVC.m in Sources */,
 				D0C47C4E1A94436800016C90 /* main.m in Sources */,
@@ -1381,6 +1406,7 @@
 				1ED570DF1CC27ED000A0932F /* ActivityView.m in Sources */,
 				1E05F36F1C8AAC010075E22E /* buyCouseDetailTopItem.m in Sources */,
 				1E05F3A51C8B0C1C0075E22E /* activityBuyVC.m in Sources */,
+				1E2893791CC527DF00CD1FBA /* WXUtil.m in Sources */,
 				D03B0A7A1A9EBC9F00E2EBF2 /* XBDbVersionTable.m in Sources */,
 				1E5D59D01CA2C1EE00854DF8 /* MyWorkDetailVC.m in Sources */,
 				1E02C8661C871CB000213403 /* CourseModel.m in Sources */,

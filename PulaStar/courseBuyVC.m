@@ -12,6 +12,11 @@
 #import "buyCourseDetailPriceInfoItem.h"
 #import "buyCourseDetailPayMethodItem.h"
 
+#import "payRequsestHandler.h"
+#import "WXApiObject.h"
+#import "WXApi.h"
+
+
 @interface courseBuyVC ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSString *_searchId;
@@ -60,7 +65,7 @@
         
         [wSelf.navigationController popViewControllerAnimated:YES];
     }];
-    
+    [WXApi registerApp:APP_ID withDescription:@"PulaStar"];
     
     tbView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, mainWidth, 370) style:UITableViewStyleGrouped];
     tbView.delegate = self;
@@ -76,7 +81,8 @@
     [buyButton setBackgroundColor:COURSE_NAVBAR_COLOR];
     [buyButton setTitle:@"确 认 支 付" forState:UIControlStateNormal];
     buyButton.layer.cornerRadius = 5;
-    //[btnCalc addTarget:self action:@selector(btnCalcAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [buyButton addTarget:self action:@selector(buyCourseAction) forControlEvents:UIControlEventTouchUpInside];
     
     
     [self.view addSubview:buyButton];
@@ -224,38 +230,72 @@
         return cell;
     }
 
- /*
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-    {
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+
+#pragma mark - action
+
+- (void)buyCourseAction
+{
+    
+    //创建支付签名对象
+    payRequsestHandler *req = [[payRequsestHandler alloc]init];
+    //初始化支付签名对象
+    [req init:APP_ID mch_id:MCH_ID];
+    //设置密钥
+    [req setKey:PARTNER_ID];
+    
+     
+     float i = [[NSString stringWithFormat:@"%@",_coursePrice]floatValue];
+     
+     if(i == 0)
+     {
+     [self alert:@"抱歉" msg:@"价格为0，无法购买"];
+     return;
+     }
+    
+    
+    
+    //获取到实际调起微信支付的参数后，在app端调起支付
+    NSMutableDictionary *dict = [req sendPay_activity:(NSString *)_courseName price:(NSString *)_coursePrice buyItemNo:(NSString *)_courseNo buyItemNum:(NSString*)@"1"];
+    
+    if(dict == nil){
+        //错误提示
+        NSString *debug = [req getDebugifo];
         
-       
-        if (indexPath.section == 1)
-        {
+        [self alert:@"提示信息" msg:debug];
         
-            if(indexPath.row == 0)
-            {
-                ProductBuyListVC* vc = [[ProductBuyListVC alloc] initWithCodeId:[proDetail.Rows2.codeID intValue]];
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            else if(indexPath.row ==1)
-            {
-                ShowOrderListVC* vc = [[ShowOrderListVC alloc] initWithGoodsId:_goodsId];
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            else if(indexPath.row == 2)
-            {
-                ProductLotteryVC* vc = [[ProductLotteryVC alloc] initWithGoods:_goodsId codeId:[proDetail.Rows2.codeID intValue] - 1];
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-        }
-  
+        NSLog(@"%@\n\n",debug);
+    }else{
+        NSLog(@"%@\n\n",[req getDebugifo]);
+        //[self alert:@"确认" msg:@"下单成功，点击OK后调起支付！"];
         
+        NSMutableString *stamp  = [dict objectForKey:@"timestamp"];
+        
+        //调起微信支付
+        PayReq* req             = [[PayReq alloc] init];
+        
+        req.openID              = [dict objectForKey:@"appid"];
+        req.partnerId           = [dict objectForKey:@"partnerid"];
+        req.prepayId            = [dict objectForKey:@"prepayid"];
+        req.nonceStr            = [dict objectForKey:@"noncestr"];
+        req.timeStamp           = stamp.intValue;
+        req.package             = [dict objectForKey:@"package"];
+        req.sign                = [dict objectForKey:@"sign"];
+        
+        [WXApi sendReq:req];
     }
-       */
+    
+    
+}
+
+//客户端提示信息
+- (void)alert:(NSString *)title msg:(NSString *)msg
+{
+    UIAlertView *alter = [[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    [alter show];
+    
+}
 
 
 
