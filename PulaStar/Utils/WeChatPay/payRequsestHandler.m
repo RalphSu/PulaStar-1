@@ -224,7 +224,7 @@
 
 
 
-- ( NSMutableDictionary *)sendPay_activity: (NSString *)title price:(NSString *)price buyItemNo:(NSString *)buyItemNo buyItemNum:(NSString*)buyItemNum
+- ( NSMutableDictionary *)sendPay_activity: (NSString *)title price:(NSString *)price buyItemNo:(NSString *)buyItemNo buyItemNum:(NSString*)buyItemNum type:(NSString *)type
 {
     
     float i = [[NSString stringWithFormat:@"%@",price] floatValue];
@@ -232,7 +232,9 @@
     float j = [[NSString stringWithFormat:@"%@",buyItemNum]floatValue];
     
     float totalPrice = i*j*100;
- 
+    
+    //float totalPrice = i*j;
+    
     
     NSString *payprice = [NSString stringWithFormat:@"%.0f",totalPrice];
         
@@ -252,9 +254,16 @@
     
     NSString* out_trade_no = [NSString stringWithFormat:@"%@ZZ%@",userNo,currentTimeStr];
     
+    NSString *attach = [[NSString alloc]init];
     
-    NSString* attach = [NSString stringWithFormat:@"%@@tc@%@@tc@%@",userNo, buyItemNo,buyItemNum];
-    
+    if([type isEqualToString:@"activity"])
+    {
+     attach = [NSString stringWithFormat:@"%@@tc@%@@tc@%@",userNo, buyItemNo,buyItemNum];
+    }
+    else
+    {
+       attach = [NSString stringWithFormat:@"%@@nt@%@@nt@%@",userNo, buyItemNo,buyItemNum];
+    }
     
     NSLog(@"attach is ------%@", attach);
     

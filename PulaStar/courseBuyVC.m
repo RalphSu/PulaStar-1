@@ -256,7 +256,7 @@
     
     
     //获取到实际调起微信支付的参数后，在app端调起支付
-    NSMutableDictionary *dict = [req sendPay_activity:(NSString *)_courseName price:(NSString *)_coursePrice buyItemNo:(NSString *)_courseNo buyItemNum:(NSString*)@"1"];
+    NSMutableDictionary *dict = [req sendPay_activity:(NSString *)_courseName price:(NSString *)_coursePrice buyItemNo:(NSString *)_courseNo buyItemNum:(NSString*)@"1" type:(NSString *)@"course"];
     
     if(dict == nil){
         //错误提示

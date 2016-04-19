@@ -48,7 +48,7 @@
 //商户API密钥，填写相应参数
 #define PARTNER_ID      @"Smjx1tdhSmjx1tdhSmjx1tdhSmjx1tdh"
 //支付结果回调页面
-#define NOTIFY_URL      @"https://121.40.151.183:8080/pula-sys/app/weixinpay/wechatPayNotify"
+#define NOTIFY_URL      @"https://121.40.151.183:443/pula-sys/app/weixinpay/wechatPayNotify"
 //获取服务器端支付数据地址（商户自定义）
 #define SP_URL          @"http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php"
 
@@ -81,5 +81,5 @@
 //签名实例测试
 - ( NSMutableDictionary *)sendPay_demo;
 
-- ( NSMutableDictionary *)sendPay_activity: (NSString *)title price:(NSString *)price buyItemNo:(NSString *)buyItemNo buyItemNum:(NSString*)buyItemNum;
+- ( NSMutableDictionary *)sendPay_activity: (NSString *)title price:(NSString *)price buyItemNo:(NSString *)buyItemNo buyItemNum:(NSString*)buyItemNum type:(NSString *)type;
 @end
