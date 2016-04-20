@@ -74,6 +74,7 @@
     
     [imgPro setImage_oy:activityImageBaseUrl image:image];
     
+    
     NSString *text = [(NSMutableDictionary *)item objectForKey:@"activityTitle"];
     
     CGSize s = [text textSizeWithFont:lblTitle.font constrainedToSize:CGSizeMake((mainWidth/2 - 10), 60) lineBreakMode:NSLineBreakByCharWrapping];
@@ -82,7 +83,8 @@
     lblTitle.numberOfLines = 0;
     lblTitle.text = text;
     
-    CGSize s1 = [text textSizeWithFont:lblTitle.font constrainedToSize:CGSizeMake((mainWidth/2 - 10), 20) lineBreakMode:NSLineBreakByCharWrapping];
+    CGSize s1 = [text textSizeWithFont:bookingNum.font constrainedToSize:CGSizeMake((mainWidth/2 - 10), 20) lineBreakMode:NSLineBreakByCharWrapping];
+    
     
     bookingNum.frame = CGRectMake((mainWidth/2+10), 10 + 60 , s1.width,s1.height);
     bookingNum.numberOfLines = 0;
@@ -90,7 +92,7 @@
     NSString *string = [NSString stringWithFormat:@"预约人数:%@",[(NSMutableDictionary *)item objectForKey:@"activityBuyCount"]];
     bookingNum.text = string;
     
-    CGSize s2 = [text textSizeWithFont:lblTitle.font constrainedToSize:CGSizeMake((mainWidth/3), 20) lineBreakMode:NSLineBreakByCharWrapping];
+    CGSize s2 = [text textSizeWithFont:bookingTime.font constrainedToSize:CGSizeMake((mainWidth/3), 20) lineBreakMode:NSLineBreakByCharWrapping];
     
     bookingTime.frame = CGRectMake((mainWidth * 0.7 ), 30 + 60 , s2.width,s2.height);
     bookingTime.numberOfLines = 0;

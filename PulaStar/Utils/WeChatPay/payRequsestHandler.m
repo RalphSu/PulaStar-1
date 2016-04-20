@@ -231,7 +231,7 @@
     
     float j = [[NSString stringWithFormat:@"%@",buyItemNum]floatValue];
     
-    float totalPrice = i*j*100;
+    float totalPrice = i*j;
     
     //float totalPrice = i*j;
     
