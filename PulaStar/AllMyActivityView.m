@@ -117,12 +117,13 @@
         {
             NSString *activityPrice = [(NSDictionary*)activityRecord objectForKey:@"noticePrice"];
             
+            NSString *activityUpdateTime = [(NSDictionary*)activityRecord objectForKey:@"updateTime"];
             NSDictionary *notice = [(NSDictionary*)activityRecord objectForKey:@"notice"];
             NSString *activityId = [(NSDictionary*)notice objectForKey:@"id"];
             NSString *activityNo = [(NSDictionary*)notice objectForKey:@"no"];
             NSString *activityTitle = [(NSDictionary*)notice objectForKey:@"title"];
             NSString *activityContent = [(NSDictionary*)notice objectForKey:@"content"];
-            NSString *activityUpdateTime = [(NSDictionary*)notice objectForKey:@"updateTime"];
+            
             NSString *activityBuyCount = [(NSDictionary*)activityRecord objectForKey:@"count"];
             NSDictionary *icon = [(NSDictionary*)activityRecord objectForKey:@"icon"];
             NSString *activityIconFileId = [(NSDictionary*)icon objectForKey:@"fileId"];

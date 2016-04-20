@@ -245,18 +245,18 @@
     
     [self.view addSubview:levelTitle];
  
-    progress = [[UIProgressView alloc] initWithFrame:CGRectMake(15, 87 + 20*2 + 30 * 4 + mainHeight * 0.2, mainWidth - 30, 10)];
+    progress = [[UIProgressView alloc] initWithFrame:CGRectMake(15, 90 + 20*2 + 30 * 4 + mainHeight * 0.2, mainWidth - 30, 10)];
     progress.progressTintColor = mainColor;
     [self.view  addSubview:progress];
     
    
-    UILabel *courseProgressTitle = [[UILabel alloc] initWithFrame:CGRectMake(15, 85 + 10 + 20*2 + 30 * 4 + mainHeight * 0.2, mainWidth/6, 20)];
+    UILabel *courseProgressTitle = [[UILabel alloc] initWithFrame:CGRectMake(15, 85 + 10 + 20*2 + 30 * 4 + mainHeight * 0.2, mainWidth/5, 20)];
     
     courseProgressTitle.adjustsFontSizeToFitWidth = YES;
     
     //NSString *title = [NSString stringWithFormat:@"您的等级为:%d级",level ];
     
-    courseProgressTitle.text = @"课程进度为";
+    courseProgressTitle.text = @"课程进度为:";
     courseProgressTitle.textAlignment = NSTextAlignmentCenter;
     courseProgressTitle.font = [UIFont boldSystemFontOfSize:14];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
@@ -265,7 +265,7 @@
     
     [self.view addSubview:courseProgressTitle];
     
-    courseProgress = [[UILabel alloc] initWithFrame:CGRectMake(15 + mainWidth/6, 85 + 10 + 20*2 + 30 * 4 + mainHeight * 0.2, mainWidth/4, 20)];
+    courseProgress = [[UILabel alloc] initWithFrame:CGRectMake(15 + mainWidth/5, 85 + 10 + 20*2 + 30 * 4 + mainHeight * 0.2, mainWidth/4, 20)];
     
     //courseProgress.adjustsFontSizeToFitWidth = YES;
     
@@ -273,7 +273,8 @@
     
     //courseProgress.text = @"课程进度为 ";
     courseProgress.textAlignment = NSTextAlignmentLeft;
-    courseProgress.font = [UIFont boldSystemFontOfSize:14];
+    courseProgress.font = [UIFont boldSystemFontOfSize:12];
+    courseProgress.textColor = mainColor;
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     //levelTitle.textColor = mainColor;
     //levelTitle.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
@@ -313,7 +314,7 @@
             
             NSString *createTime = [(NSDictionary *)record objectForKey:@"createTime"];
             NSString *userCourseTime  = [(NSDictionary *)record objectForKey:@"courseTime"];
-            NSString *updateTime = [(NSDictionary *)record objectForKey:@"courseTime"];
+            NSString *updateTime = [(NSDictionary *)record objectForKey:@"updateTime"];
             
             int userLevel = [[(NSDictionary *)record objectForKey:@"level"] intValue];
             
