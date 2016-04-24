@@ -97,14 +97,14 @@
     [self.view addSubview:time];
     
     
-    dianPing = [[UILabel alloc]initWithFrame:CGRectMake(10,40 + mainHeight/2,(mainWidth - 20)/4, 20)];
+    dianPing = [[UILabel alloc]initWithFrame:CGRectMake(10,40 + mainHeight/2,(mainWidth - 20)/4, 30)];
     dianPing.text = @"点评:";
     dianPing.textColor = [UIColor hexFloatColor:@"EE7600"];
     dianPing.font = [UIFont systemFontOfSize:16];
     dianPing.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:dianPing];
     
-    levelImage = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (mainWidth - 20)/3, 40 + mainHeight/2 ,(mainWidth - 20)*0.5, 20)];
+    levelImage = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (mainWidth - 20)*0.4, 40 + mainHeight/2 ,(mainWidth - 20)*0.5, 30)];
     
     
     NSString *string = [NSString stringWithFormat:@"star%@",workInfoRate];

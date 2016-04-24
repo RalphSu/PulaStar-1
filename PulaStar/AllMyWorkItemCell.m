@@ -69,7 +69,7 @@
         dianPingLeft = [[UILabel alloc]initWithFrame:CGRectMake(10,25 + mainHeight/4,(mainWidth/2 - 15)/4, 15)];
         [self addSubview:dianPingLeft];
         
-        levelImageLeft = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (mainWidth/2 - 15)/3, 25 + mainHeight/4 ,(mainWidth/2 - 15)*0.5, 15)];
+        levelImageLeft = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (mainWidth/2 - 15)*0.4, 25 + mainHeight/4 ,(mainWidth/2 - 15)*0.5, 15)];
         [self addSubview:levelImageLeft];
         
         imgProRight = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth/2 +5, 10 ,(mainWidth/2 - 15), mainHeight/4)];
@@ -97,7 +97,7 @@
         dianPingRight = [[UILabel alloc] initWithFrame:CGRectMake(mainWidth/2 +5, 25 + mainHeight/4 ,(mainWidth/2 - 15)/4, 15)];
         [self addSubview:dianPingRight];
         
-        levelImageRight = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth/2 + 5 + (mainWidth/2 - 15)/3, 25 + mainHeight/4 ,(mainWidth/2 - 15)*0.5, 15)];
+        levelImageRight = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth/2 + 5 + (mainWidth/2 - 15)*0.4, 25 + mainHeight/4 ,(mainWidth/2 - 15)*0.5, 15)];
         
         [self addSubview:levelImageRight];
         
