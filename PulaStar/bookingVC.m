@@ -195,7 +195,21 @@
     
 }
 
-
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+//点击屏幕空白处去掉键盘
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+        
+    [self->txtUserName resignFirstResponder];
+    [self->txtParentName resignFirstResponder];
+    [self->txtAge resignFirstResponder];
+    [self->txtMobile resignFirstResponder];
+    
+}
 
 
 #pragma mark - action
@@ -371,6 +385,8 @@
     
     
 }
+
+
 
 
 @end
