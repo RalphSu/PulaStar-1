@@ -1236,7 +1236,7 @@
 				TargetAttributes = {
 					D0C47C471A94436800016C90 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = HS22F63B65;
+						DevelopmentTeam = 2AT28PH9KR;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1245,6 +1245,7 @@
 					};
 					D0C47C601A94436800016C90 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2AT28PH9KR;
 						TestTargetID = D0C47C471A94436800016C90;
 					};
 				};
@@ -1484,7 +1485,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Wenli Xie (2AT28PH9KR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wenli Xie (2AT28PH9KR)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1505,6 +1507,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "32a5ab44-d832-4df1-9a91-39f10ff83829";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1526,7 +1529,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Wenli Xie (2AT28PH9KR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wenli Xie (2AT28PH9KR)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1539,6 +1543,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "32a5ab44-d832-4df1-9a91-39f10ff83829";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1566,9 +1571,10 @@
 					"$(PROJECT_DIR)/PulaStar/Utils/WeChat",
 					"$(PROJECT_DIR)/PulaStar/Utils/KSharedSDK/Core/WeChat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.Shanghai.PulaStar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pula.stars;
 				PRODUCT_NAME = PulaStar;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1594,9 +1600,10 @@
 					"$(PROJECT_DIR)/PulaStar/Utils/WeChat",
 					"$(PROJECT_DIR)/PulaStar/Utils/KSharedSDK/Core/WeChat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.Shanghai.PulaStar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pula.stars;
 				PRODUCT_NAME = PulaStar;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1604,6 +1611,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1616,6 +1625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fanwa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PulaStar;
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulaStar.app/PulaStar";
 			};
 			name = Debug;
@@ -1624,6 +1634,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1632,6 +1644,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fanwa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PulaStar;
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PulaStar.app/PulaStar";
 			};
 			name = Release;

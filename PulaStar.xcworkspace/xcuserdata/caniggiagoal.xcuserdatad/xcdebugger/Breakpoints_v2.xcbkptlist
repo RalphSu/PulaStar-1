@@ -1432,11 +1432,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PulaStar/activityBuyVC.m"
-            timestampString = "482770503.839954"
+            timestampString = "484755546.929115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
             landmarkName = "-buyActivityAction"
             landmarkType = "5">
          </BreakpointContent>

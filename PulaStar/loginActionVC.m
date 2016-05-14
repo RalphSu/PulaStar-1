@@ -133,7 +133,7 @@
             
             [[XBToastManager ShardInstance] hideprogress];
             
-            [[XBToastManager ShardInstance] showtoast:@"登陆成功"];
+            [[XBToastManager ShardInstance] showtoast:@"登录成功"];
             
             [MyLoginModel doUserGetInfo:txtUser.text pwd:txtPwd.text success:^(AFHTTPRequestOperation* operation2, NSObject* result2){
                 BOOL error2 = [[(NSDictionary*)result2 objectForKey:@"error"] boolValue];
@@ -171,13 +171,13 @@
         {
             [[XBToastManager ShardInstance] hideprogress];
             
-            [[XBToastManager ShardInstance] showtoast:@"登陆失败，请检查用户名或密码"];
+            [[XBToastManager ShardInstance] showtoast:@"登录失败，请检查用户名或密码"];
             
         }
             } failure:^(NSError* error){
         
         [[XBToastManager ShardInstance] hideprogress];
-        [[XBToastManager ShardInstance] showtoast:@"登陆失败,请查看网络"];
+        [[XBToastManager ShardInstance] showtoast:@"登录失败,请查看网络"];
     }];
     
 }

@@ -274,16 +274,25 @@
         return;
     }
     
+    NSString *price = [NSString stringWithFormat:@"%f",100*i];
     
+    NSString *userName = [[NSUserDefaults standardUserDefaults] objectForKey:UserInfoName];
+    
+    if(userName == nil)
+    {
+      [self alert:@"未登录" msg:@"请登录后再购买"];
+      return;
+    }
+
     
     //获取到实际调起微信支付的参数后，在app端调起支付
-    NSMutableDictionary *dict = [req sendPay_activity:(NSString *)_activityTitle price:(NSString *)_activityPrice  buyItemNo:(NSString *)_activityNo buyItemNum:(NSString*)@"1" type:(NSString *)@"activity"];
+    NSMutableDictionary *dict = [req sendPay_activity:(NSString *)_activityTitle price:(NSString *)price  buyItemNo:(NSString *)_activityNo buyItemNum:(NSString*)@"1" type:(NSString *)@"activity"];
    
     if(dict == nil){
         //错误提示
         NSString *debug = [req getDebugifo];
         
-        [self alert:@"提示信息" msg:debug];
+        //[self alert:@"提示信息" msg:debug];
         
         NSLog(@"%@\n\n",debug);
     }else{

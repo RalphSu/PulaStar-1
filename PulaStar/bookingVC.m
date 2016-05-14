@@ -118,7 +118,7 @@
     txtMobile.placeholder = @"请输入电话号码";
     txtMobile.clearButtonMode = UITextFieldViewModeWhileEditing;
     txtMobile.font = [UIFont systemFontOfSize:14];
-    txtMobile.keyboardType = UIKeyboardTypePhonePad;
+    txtMobile.keyboardType = UIKeyboardTypeNumberPad;
     //txtParentName.text = [[NSUserDefaults standardUserDefaults] objectForKey:kLoginUsername];
     [self.view  addSubview:txtMobile];
     

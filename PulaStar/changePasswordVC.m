@@ -146,7 +146,7 @@
         return;
     }
     
-    if(newPwd1.text !=  newPwd2.text)
+    if(![newPwd1.text isEqualToString:newPwd2.text])
     {
         [[XBToastManager ShardInstance] showtoast:@"新密码不一致"];
         return;
@@ -155,7 +155,7 @@
     NSString* oldPassword = [[NSUserDefaults standardUserDefaults] objectForKey:UserInfoPassword];
     NSString* userNo = [[NSUserDefaults standardUserDefaults] objectForKey:UserInfoNo];
     
-    if(oldPwd.text != oldPassword)
+    if(![oldPwd.text isEqualToString:oldPassword])
     {
         [[XBToastManager ShardInstance] showtoast:@"旧密码不正确"];
         return;
@@ -200,7 +200,7 @@
     } failure:^(NSError* error){
         
         [[XBToastManager ShardInstance] hideprogress];
-        [[XBToastManager ShardInstance] showtoast:@"登陆失败,请查看网络"];
+        [[XBToastManager ShardInstance] showtoast:@"登录失败,请查看网络"];
     }]; 
 
 }
