@@ -17,7 +17,7 @@
     UIImageView *imgPro;
     UIImageView *imgArrow;
     UILabel     *lblTitle;
-    
+    UILabel     *accountMgt;
 }
 
 @end
@@ -49,6 +49,23 @@
         lblTitle.textColor = [UIColor whiteColor];
         lblTitle.lineBreakMode = NSLineBreakByTruncatingTail;
         [self addSubview:lblTitle];
+    
+        
+        
+        accountMgt = [[UILabel alloc] init];
+        accountMgt.numberOfLines = 1;
+        accountMgt.font = [UIFont systemFontOfSize:18];
+        accountMgt.textColor = [UIColor whiteColor];
+        accountMgt.lineBreakMode = NSLineBreakByTruncatingTail;
+        
+        [self addSubview:accountMgt];
+        
+        accountMgt.text = @"账户管理";
+        CGSize s = [accountMgt.text textSizeWithFont:lblTitle.font constrainedToSize:CGSizeMake(100, 40) lineBreakMode:NSLineBreakByCharWrapping];
+        
+        accountMgt.frame = CGRectMake(mainWidth - 140, 20 ,100, s.height < 40 ? s.height : 40);
+        
+        
         
         imgArrow = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth - 40, 20 ,15, 20)];
         
