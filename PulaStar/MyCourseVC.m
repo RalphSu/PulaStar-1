@@ -326,15 +326,21 @@
         {
             
             NSArray *data = [(NSDictionary*)result objectForKey:@"data"];
+            NSArray *ordersArray = nil;
             
-            NSArray *ordersArray = [(NSDictionary*)[(NSArray*)data objectAtIndex:0] objectForKey:@"orders"];
+            if(data.count > 0)
+            {
+              ordersArray = [(NSDictionary*)[(NSArray*)data objectAtIndex:0] objectForKey:@"orders"];
+            }
+            
             NSString *updateTime = nil;
             
             int userLevel = 0;
             int orderId = 0;
-            
-            for(NSDictionary *record  in ordersArray)
+            if(ordersArray != nil)
             {
+             for(NSDictionary *record  in ordersArray)
+             {
                 systemNum += [[(NSDictionary *)record objectForKey:@"paiedCount"] intValue];
                 systemUsedNum += [[(NSDictionary *)record objectForKey:@"usedCount"] intValue];
                 specialNum += [[(NSDictionary *)record objectForKey:@"specialCourseCount"] intValue];
@@ -353,8 +359,8 @@
                     
                 }
                 
+              }
             }
-            
             
             /*
             
