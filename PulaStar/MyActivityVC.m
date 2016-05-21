@@ -47,7 +47,7 @@
     myActivityChn.font = [UIFont boldSystemFontOfSize:25];
     //basicInfoChn.textAlignment = NSTextAlignmentCenter;
     
-    myActivityChn.textColor = [UIColor hexFloatColor:@"EE7600"];
+    myActivityChn.textColor = MYACTIVITY_NAVBAR_COLOR;
     
     [self.view addSubview:myActivityChn];
     
@@ -59,7 +59,7 @@
     myActivityEng.font = [UIFont boldSystemFontOfSize:25];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     myActivityEng.textColor = [UIColor whiteColor];
-    myActivityEng.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+    myActivityEng.backgroundColor = MYACTIVITY_NAVBAR_COLOR;
     
     [self.view addSubview:myActivityEng];
 

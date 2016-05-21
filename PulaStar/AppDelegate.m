@@ -64,10 +64,10 @@
     [UITabBar appearance].tintColor = BG_COLOR;
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_NOR_COLOR} forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_HLT_COLOR} forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:MYINFO_NAVBAR_COLOR} forState:UIControlStateSelected];
     
     // customise NavigationBar UI Effect
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithRenderColor:NAVBAR_COLOR renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithRenderColor:BG_COLOR renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16.],NSForegroundColorAttributeName:[UIColor blackColor]}];
     
     
@@ -120,7 +120,7 @@
     
     [activityVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_NOR_COLOR} forState:UIControlStateNormal];
     
-    [activityVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:ACTIVITY_NAVBAR_COLOR} forState:UIControlStateSelected];
+    [activityVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:MYINFO_NAVBAR_COLOR} forState:UIControlStateSelected];
     
     /*
     
@@ -142,7 +142,7 @@
     
     [courseNav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_NOR_COLOR} forState:UIControlStateNormal];
     
-    [courseNav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:COURSE_NAVBAR_COLOR} forState:UIControlStateSelected];
+    [courseNav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:MYINFO_NAVBAR_COLOR} forState:UIControlStateSelected];
     
     courseNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"课程"
                                                       image:[unselectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
@@ -177,7 +177,7 @@
     
     [noticeNav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_NOR_COLOR} forState:UIControlStateNormal];
     
-    [noticeNav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:NOTIFY_NAVBAR_COLOR} forState:UIControlStateSelected];
+    [noticeNav.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:MYINFO_NAVBAR_COLOR} forState:UIControlStateSelected];
     
     
     UIViewController *cartVc = [[UIViewController alloc] init];
@@ -198,7 +198,7 @@
     unselectedImage = [UIImage imageNamed:@"tab-mine"];
     selectedImage = [UIImage imageNamed:@"tab-mine-s"];
     
-    mineInfoNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我"
+    mineInfoNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的"
                                                        image:[unselectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
                                                selectedImage:[selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     mineInfoNav.tabBarItem.tag = 4;
@@ -265,19 +265,22 @@
     
     
     // customise TabBar UI Effect
-    [UITabBar appearance].tintColor = BG_COLOR;
+    [UITabBar appearance].tintColor = nil;
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_NOR_COLOR} forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:TABBAR_TEXT_HLT_COLOR} forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:MYINFO_NAVBAR_COLOR} forState:UIControlStateSelected];
     
     // customise NavigationBar UI Effect
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithRenderColor:NAVBAR_COLOR renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithRenderColor:BG_COLOR renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
     
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16.],NSForegroundColorAttributeName:[UIColor blackColor]}];
     
     
     UITabBar *tabBar = tabBarController.tabBar;
     tabBar.backgroundColor = BG_COLOR;
+    
+    
+    tabBar.backgroundImage = [UIImage imageNamed:@"yyg_center"];
     
     return tabBarController;
 }

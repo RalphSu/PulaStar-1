@@ -252,7 +252,8 @@
      [self alert:@"抱歉" msg:@"价格为0，无法购买"];
      return;
      }
-    NSString *price = [NSString stringWithFormat:@"%f",100*i];
+    /*100 *i */
+    NSString *price = [NSString stringWithFormat:@"%f",1.0];
     
     NSString *userName = [[NSUserDefaults standardUserDefaults] objectForKey:UserInfoName];
     

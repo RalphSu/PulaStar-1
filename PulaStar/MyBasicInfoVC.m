@@ -48,7 +48,7 @@
     basicInfoChn.font = [UIFont boldSystemFontOfSize:25];
     //basicInfoChn.textAlignment = NSTextAlignmentCenter;
     
-    basicInfoChn.textColor = [UIColor hexFloatColor:@"cc0033"];
+    basicInfoChn.textColor = MYBASICINFO_NAVBAR_COLOR;
     
     [self.view addSubview:basicInfoChn];
     UILabel *basicInfoEng = [[UILabel alloc] initWithFrame:CGRectMake(mainWidth/3, 10, mainWidth/2, 25)];
@@ -59,25 +59,25 @@
     basicInfoEng.font = [UIFont boldSystemFontOfSize:25];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     basicInfoEng.textColor = [UIColor whiteColor];
-    basicInfoEng.backgroundColor = [UIColor hexFloatColor:@"cc0033"];
+    basicInfoEng.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
 
     [self.view addSubview:basicInfoEng];
     
     
     UIImageView* line1 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 50, (mainWidth - 30), 30)];
-    line1.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line1.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line1];
     
     UIImageView* line2 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 80 , 2, 30*6)];
-    line2.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line2.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line2];
     
     UIImageView* line3 = [[UIImageView alloc] initWithFrame:CGRectMake(15 + (mainWidth - 30)*0.4, 80 , 2, 30*6)];
-    line3.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line3.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line3];
     
     UIImageView* line4 = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth - 17, 80 , 2, 30*6)];
-    line4.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line4.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line4];
     
     UILabel *no = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30 , (mainWidth - 30)*0.4 - 2, 28)];
@@ -102,7 +102,7 @@
 
     
     UIImageView* line5 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30, mainWidth - 34, 2)];
-    line5.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line5.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line5];
     
     UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*2 , (mainWidth - 30)*0.4 - 2, 28)];
@@ -111,7 +111,7 @@
     name.text = @"姓名";
     name.textAlignment = NSTextAlignmentCenter;
     name.font = [UIFont boldSystemFontOfSize:20];
-    name.backgroundColor = [UIColor hexFloatColor:@"FFC0CB"];
+    name.backgroundColor = [UIColor hexFloatColor:@"FFFACD"];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     //no.textColor = [UIColor whiteColor];
     //no.backgroundColor = [UIColor blackColor];
@@ -122,7 +122,7 @@
     userName.adjustsFontSizeToFitWidth = YES;
     //userName.text = @"姓名";
     userName.textAlignment = NSTextAlignmentCenter;
-    userName.backgroundColor = [UIColor hexFloatColor:@"FFC0CB"];
+    userName.backgroundColor = [UIColor hexFloatColor:@"FFFACD"];
     userName.font = [UIFont boldSystemFontOfSize:20];
     [self.view addSubview:userName];
 
@@ -130,7 +130,7 @@
     
     
     UIImageView* line6 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 *2, mainWidth - 34, 2)];
-    line6.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line6.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line6];
     
     
@@ -155,7 +155,7 @@
     
     
     UIImageView* line7 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 * 3, mainWidth - 34, 2)];
-    line7.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line7.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line7];
     
     UILabel *parentName = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*4 , (mainWidth - 30)*0.4 - 2, 28)];
@@ -167,7 +167,7 @@
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     //no.textColor = [UIColor whiteColor];
     //no.backgroundColor = [UIColor blackColor];
-    parentName.backgroundColor = [UIColor hexFloatColor:@"FFC0CB"];
+    parentName.backgroundColor = [UIColor hexFloatColor:@"FFFACD"];
     [self.view addSubview:parentName];
     
     userParentName = [[UILabel alloc] initWithFrame:CGRectMake(15 + (mainWidth - 30)*0.4 + 2, 52 + 30*4, (mainWidth - 30)*0.6 - 4, 28)];
@@ -176,12 +176,12 @@
     //userParentName.text = @"家长姓名";
     userParentName.textAlignment = NSTextAlignmentCenter;
     userParentName.font = [UIFont boldSystemFontOfSize:20];
-    userParentName.backgroundColor = [UIColor hexFloatColor:@"FFC0CB"];
+    userParentName.backgroundColor = [UIColor hexFloatColor:@"FFFACD"];
 
     [self.view addSubview:userParentName];
     
     UIImageView* line8 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 * 4, mainWidth - 34, 2)];
-    line8.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line8.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line8];
     
     UILabel *mobile = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*5 , (mainWidth - 30)*0.4 - 2, 28)];
@@ -206,14 +206,14 @@
     
     
     UIImageView* line9 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 * 5, mainWidth - 34, 2)];
-    line9.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line9.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line9];
     
     UILabel *address = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*6 , (mainWidth - 30)*0.4 - 2, 28)];
     
     address.adjustsFontSizeToFitWidth = YES;
     address.text = @"家庭地址";
-    address.backgroundColor = [UIColor hexFloatColor:@"FFC0CB"];
+    address.backgroundColor = [UIColor hexFloatColor:@"FFFACD"];
     address.textAlignment = NSTextAlignmentCenter;
     address.font = [UIFont boldSystemFontOfSize:20];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
@@ -225,7 +225,7 @@
     
     userAddress.adjustsFontSizeToFitWidth = YES;
     //userAddress.text = @"家庭地址";
-    userAddress.backgroundColor = [UIColor hexFloatColor:@"FFC0CB"];
+    userAddress.backgroundColor = [UIColor hexFloatColor:@"FFFACD"];
     userAddress.textAlignment = NSTextAlignmentCenter;
     userAddress.font = [UIFont boldSystemFontOfSize:20];
     [self.view addSubview:userAddress];
@@ -233,7 +233,7 @@
     
     
     UIImageView* line10 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 80 + 30*6, mainWidth - 30, 2)];
-    line10.backgroundColor = [UIColor hexFloatColor:@"CC0033"];
+    line10.backgroundColor = MYBASICINFO_NAVBAR_COLOR;
     [self.view addSubview:line10];
     
     

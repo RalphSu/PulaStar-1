@@ -37,10 +37,10 @@
     {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        bottomButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 10, mainWidth - 40, 40)];
+        bottomButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 10, mainWidth, 40)];
         [bottomButton setBackgroundColor:MYINFO_NAVBAR_COLOR];
         //[aboutUsButton setTitle:@"确认支付" forState:UIControlStateNormal];
-         bottomButton.layer.cornerRadius = 5;
+         bottomButton.layer.cornerRadius = 0;
         [bottomButton addTarget:self action:@selector(bottomButtonAction) forControlEvents:UIControlEventTouchUpInside];
         
         

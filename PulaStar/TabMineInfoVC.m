@@ -60,7 +60,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.title = @"我 的 信 息";
+    self.title = @"我  的";
     //__weak typeof (self) wSelf = self;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLoginOk) name:userlogined object:nil];
@@ -258,7 +258,7 @@
         
            //[cell  setCourseItem:_searchId courseNo:_courseNo courseName:_courseName coursePrice:_coursePrice];
         
-            NSString *buttonName = @"关 于 我 们";
+            NSString *buttonName = @"● ● ● About Us ● ● ●";
         
             [cell MineMainInfoBottomItem:buttonName row:1];
             [cell setDelegate:self];

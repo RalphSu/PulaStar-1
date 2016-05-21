@@ -274,7 +274,8 @@
         return;
     }
     
-    NSString *price = [NSString stringWithFormat:@"%f",100*i];
+    
+    NSString *price = [NSString stringWithFormat:@"%f",i];
     
     NSString *userName = [[NSUserDefaults standardUserDefaults] objectForKey:UserInfoName];
     

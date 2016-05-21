@@ -32,13 +32,13 @@
     if (self)
     {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
-        self.backgroundColor = MYINFO_NAVBAR_COLOR;
+        self.backgroundColor = MYINFO_NAVBAR_TOP_COLOR;
         
         imgPro = [[UIImageView alloc] initWithFrame:CGRectMake(10, 15 ,30, 30)];
         
         imgPro.image = [UIImage imageNamed:@"touxiang"];
-        imgPro.layer.borderWidth = 0.5;
-        imgPro.layer.cornerRadius = 15;
+        imgPro.layer.borderWidth = 0;
+        imgPro.layer.cornerRadius = 0;
         imgPro.layer.borderColor = [[UIColor hexFloatColor:@"dedede"] CGColor];
         imgPro.layer.masksToBounds = YES;
         [self addSubview:imgPro];

@@ -65,8 +65,8 @@
     imgPro = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10 ,(mainWidth - 20), mainHeight/2)];
     
     //imgProLeft.image = [UIImage imageNamed:@"noimage"];
-    imgPro.layer.borderWidth = 0.5;
-    imgPro.layer.cornerRadius = 5;
+    imgPro.layer.borderWidth = 0;
+    imgPro.layer.cornerRadius = 0;
     imgPro.layer.borderColor = [[UIColor hexFloatColor:@"dedede"] CGColor];
     imgPro.layer.masksToBounds = YES;
     
@@ -78,7 +78,7 @@
     
     date.text = @"日期:";
     
-    date.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+    date.backgroundColor = MYWORK_NAVBAR_COLOR;
     date.textColor = [UIColor whiteColor];
     date.font = [UIFont systemFontOfSize:20];
     date.textAlignment = NSTextAlignmentCenter;
@@ -89,7 +89,9 @@
     
     time.text = workInfoEffectDate;
     
-    time.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+   
+    
+    time.backgroundColor = MYWORK_NAVBAR_COLOR;
     time.textColor = [UIColor whiteColor];
     time.font = [UIFont systemFontOfSize:20];
     time.textAlignment = NSTextAlignmentCenter;
@@ -99,7 +101,7 @@
     
     dianPing = [[UILabel alloc]initWithFrame:CGRectMake(10,40 + mainHeight/2,(mainWidth - 20)/4, 30)];
     dianPing.text = @"点评:";
-    dianPing.textColor = [UIColor hexFloatColor:@"EE7600"];
+    dianPing.textColor = MYWORK_NAVBAR_COLOR;
     dianPing.font = [UIFont systemFontOfSize:16];
     dianPing.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:dianPing];

@@ -95,10 +95,7 @@
 #define changePasswordUrl   @"https://121.40.151.183:443/pula-sys/app/studentinterface/updatePassword?studentNo=%@&oldPassword=%@&newPassword=%@&_json=1"
 
 #define resetPasswordUrl    @"https://121.40.151.183:443/pula-sys/app/studentinterface/resetPassword?mobile=%@"
-
-#define getUserCourseUrl     @"https://121.40.151.183:443/pula-sys/app/timecourseorder/list?condition.studentNo=%@"
-
-
+#define getUserCourseUrl    @"https://121.40.151.183:443/pula-sys/app/studentinterface/listTimeCourses?studentNo=%@"
 
 #define auditionCreateUrl  @"https://121.40.151.183:443/pula-sys/app/audition/create?audition.parent=%@&audition.comments=&audition.student=%@&audition.branchNo=%@&audition.branchName=&audition.plan1=%@&audition.age=%@&audition.phone=%@&_json=1"
 

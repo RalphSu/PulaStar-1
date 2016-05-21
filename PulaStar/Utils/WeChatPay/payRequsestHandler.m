@@ -258,11 +258,11 @@
     
     if([type isEqualToString:@"activity"])
     {
-     attach = [NSString stringWithFormat:@"%@@tc@%@@tc@%@",userNo, buyItemNo,buyItemNum];
+     attach = [NSString stringWithFormat:@"%@@nt@%@@nt@%@",userNo, buyItemNo,buyItemNum];
     }
     else
     {
-       attach = [NSString stringWithFormat:@"%@@nt@%@@nt@%@",userNo, buyItemNo,buyItemNum];
+       attach = [NSString stringWithFormat:@"%@@tc@%@@tc@%@",userNo, buyItemNo,buyItemNum];
     }
     
     NSLog(@"attach is ------%@", attach);

@@ -9,28 +9,32 @@
 #define mainColor                   [UIColor hexFloatColor:@"ff6600"]
 
 // bg related
-#define BG_COLOR                    RGB(248,248,248)
+//#define BG_COLOR                    RGB(248,248,248)
+#define BG_COLOR                    RGB(0,39,44)
+
 #define BG_GRAY_COLOR               RGB(242,242,242)
 #define NAVBAR_COLOR                [UIColor hexFloatColor:@"f68e49"]
 
 #define myInfoColr                 [UIColor hexFloatColor:@"ff6600"]
 
-#define MYINFO_NAVBAR_COLOR       [UIColor hexFloatColor:@"cc3366"]
-#define MYBASICINFO_NAVBAR_COLOR  [UIColor hexFloatColor:@"cc0033"]
-#define MYCOURSE_NAVBAR_COLOR     [UIColor hexFloatColor:@"66cc33"]
-#define MYACTIVITY_NAVBAR_COLOR   [UIColor hexFloatColor:@"EE7600"]
-#define MYWORK_NAVBAR_COLOR       [UIColor hexFloatColor:@"DB6A24"]
+#define MYINFO_NAVBAR_COLOR       [UIColor hexFloatColor:@"30bed8"]
+#define MYINFO_NAVBAR_TOP_COLOR   [UIColor hexFloatColor:@"58c3e1"]
+#define MYBASICINFO_NAVBAR_COLOR  [UIColor hexFloatColor:@"fdd000"]
+#define MYCOURSE_NAVBAR_COLOR     [UIColor hexFloatColor:@"ff7f00"]
+#define MYACTIVITY_NAVBAR_COLOR   [UIColor hexFloatColor:@"ee2c2c"]
+#define MYWORK_NAVBAR_COLOR       [UIColor hexFloatColor:@"2fafb7"]
 
 
-#define ACTIVITY_NAVBAR_COLOR  [UIColor hexFloatColor:@"ffa500"]
+#define ACTIVITY_NAVBAR_COLOR  [UIColor hexFloatColor:@"ee2c2c"]
 
-#define BUYACTIVITY_NAVBAR_COLOR [UIColor hexFloatColor:@"EE7600"]
+#define BUYACTIVITY_NAVBAR_COLOR [UIColor hexFloatColor:@"ee2c2c"]
 
-#define COURSE_NAVBAR_COLOR    mainColor
+#define COURSE_NAVBAR_COLOR    [UIColor hexFloatColor:@"ff7f00"]
 
-#define BUYCOURSE_NAVBAR_COLOR mainColor
+#define BUYCOURSE_NAVBAR_COLOR [UIColor hexFloatColor:@"ff7f00"]
 
-#define NOTIFY_NAVBAR_COLOR    [UIColor hexFloatColor:@"9ACD32"]
+#define NOTIFY_NAVBAR_COLOR    [UIColor hexFloatColor:@"2fafb7"]
+
 
 
 

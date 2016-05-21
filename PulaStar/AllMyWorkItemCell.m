@@ -49,7 +49,7 @@
         
         //imgProLeft.image = [UIImage imageNamed:@"noimage"];
         imgProLeft.layer.borderWidth = 0.5;
-        imgProLeft.layer.cornerRadius = 5;
+        imgProLeft.layer.cornerRadius = 0;
         imgProLeft.layer.borderColor = [[UIColor hexFloatColor:@"dedede"] CGColor];
         imgProLeft.layer.masksToBounds = YES;
         
@@ -62,7 +62,7 @@
         dateLeft = [[UILabel alloc]initWithFrame:CGRectMake(10,10 + mainHeight/4,(mainWidth/2 - 15)/4 + 1, 15)];
         [self addSubview:dateLeft];
         
-        timeLeft = [[UILabel alloc]initWithFrame:CGRectMake(10 + (mainWidth/2 - 15)/4,10 + mainHeight/4,(mainWidth/2 - 15)*0.75 - 1 , 15)];
+        timeLeft = [[UILabel alloc]initWithFrame:CGRectMake(10 + (mainWidth/2 - 15)/4,10 + mainHeight/4,(mainWidth/2 - 15)*0.75  , 15)];
         [self addSubview:timeLeft];
         
       
@@ -76,7 +76,7 @@
         
         //imgProRight.image = [UIImage imageNamed:@"noimage"];
         imgProRight.layer.borderWidth = 0.5;
-        imgProRight.layer.cornerRadius = 5;
+        imgProRight.layer.cornerRadius = 0;
         imgProRight.layer.borderColor = [[UIColor hexFloatColor:@"dedede"] CGColor];
         imgProRight.layer.masksToBounds = YES;
         
@@ -90,7 +90,7 @@
         dateRight = [[UILabel alloc]initWithFrame:CGRectMake(mainWidth/2 +5,10 + mainHeight/4,(mainWidth/2 - 15)/4 + 1, 15)];
         [self addSubview:dateRight];
         
-        timeRight = [[UILabel alloc]initWithFrame:CGRectMake(mainWidth/2 +5 + (mainWidth/2 - 15)/4,10 + mainHeight/4,(mainWidth/2 - 15)*0.75 - 1, 15)];
+        timeRight = [[UILabel alloc]initWithFrame:CGRectMake(mainWidth/2 +5 + (mainWidth/2 - 15)/4,10 + mainHeight/4,(mainWidth/2 - 15)*0.75 , 15)];
         [self addSubview:timeRight];
         
         
@@ -136,20 +136,20 @@
     
     dateLeft.text = @"日期:";
     
-    dateLeft.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+    dateLeft.backgroundColor = MYWORK_NAVBAR_COLOR;
     dateLeft.textColor = [UIColor whiteColor];
     dateLeft.font = [UIFont systemFontOfSize:12];
     dateLeft.textAlignment = NSTextAlignmentCenter;
     
     timeLeft.text = [(NSMutableDictionary *)item objectForKey:@"workEffectDate"];
     
-    timeLeft.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+    timeLeft.backgroundColor = MYWORK_NAVBAR_COLOR;
     timeLeft.textColor = [UIColor whiteColor];
     timeLeft.font = [UIFont systemFontOfSize:12];
     timeLeft.textAlignment = NSTextAlignmentCenter;
     
     dianPingLeft.text = @"点评:";
-    dianPingLeft.textColor = [UIColor hexFloatColor:@"EE7600"];
+    dianPingLeft.textColor = MYWORK_NAVBAR_COLOR;
     dianPingLeft.font = [UIFont systemFontOfSize:12];
     dianPingLeft.textAlignment = NSTextAlignmentCenter;
     
@@ -172,19 +172,19 @@
         
         dateRight.text = @"日期:";
         
-        dateRight.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+        dateRight.backgroundColor = MYWORK_NAVBAR_COLOR;
         dateRight.textColor = [UIColor whiteColor];
         dateRight.font = [UIFont systemFontOfSize:12];
         dateRight.textAlignment = NSTextAlignmentCenter;
 
         timeRight.text = [(NSMutableDictionary *)item1 objectForKey:@"workEffectDate"];
         
-        timeRight.backgroundColor = [UIColor hexFloatColor:@"EE7600"];
+        timeRight.backgroundColor = MYWORK_NAVBAR_COLOR;
         timeRight.textColor = [UIColor whiteColor];
         timeRight.font = [UIFont systemFontOfSize:12];
         timeRight.textAlignment = NSTextAlignmentCenter;
         dianPingRight.text = @"点评:";
-        dianPingRight.textColor = [UIColor hexFloatColor:@"EE7600"];
+        dianPingRight.textColor = MYWORK_NAVBAR_COLOR;
         dianPingRight.font = [UIFont systemFontOfSize:12];
         dianPingRight.textAlignment = NSTextAlignmentCenter;
         

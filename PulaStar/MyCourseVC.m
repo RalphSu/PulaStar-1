@@ -21,6 +21,14 @@
     UIProgressView *progress;
     UILabel *courseProgress;
     UILabel     *courseTime;
+    int systemNum;
+    int systemUsedNum;
+    int specialNum;
+    int specialUsedNum;
+    int artNum;
+    int artUsedNum;
+    int memberNum;
+    int memberUsedNum;
 }
 @end
 
@@ -42,6 +50,15 @@
         [wSelf.navigationController popViewControllerAnimated:YES];
     }];
     
+     systemNum = 0;
+     systemUsedNum = 0;
+     specialNum = 0;
+     specialUsedNum = 0;
+     artNum = 0;
+     artUsedNum = 0;
+     memberNum = 0;
+     memberUsedNum = 0;
+    
     UILabel *myCourseChn = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, mainWidth/3, 25)];
     
     myCourseChn.adjustsFontSizeToFitWidth = YES;
@@ -49,7 +66,7 @@
     myCourseChn.font = [UIFont boldSystemFontOfSize:25];
     //basicInfoChn.textAlignment = NSTextAlignmentCenter;
     
-    myCourseChn.textColor = [UIColor hexFloatColor:@"66cc33"];
+    myCourseChn.textColor = MYCOURSE_NAVBAR_COLOR;
     
     [self.view addSubview:myCourseChn];
     
@@ -61,25 +78,25 @@
     myCourseEng.font = [UIFont boldSystemFontOfSize:25];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     myCourseEng.textColor = [UIColor whiteColor];
-    myCourseEng.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    myCourseEng.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     
     [self.view addSubview:myCourseEng];
     
     
     UIImageView* line1 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 50, (mainWidth - 30), 2)];
-    line1.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line1.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line1];
     
     UIImageView* line2 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 50 , 2, 30*5)];
-    line2.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line2.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line2];
     
     UIImageView* line3 = [[UIImageView alloc] initWithFrame:CGRectMake(15 + (mainWidth - 30)*0.3, 50 , 2, 30*5)];
-    line3.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line3.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line3];
     
     UIImageView* line4 = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth - 17, 50 , 2, 30*5)];
-    line4.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line4.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line4];
     
     UILabel *courseExpireDate = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*0 , (mainWidth - 30)*0.3 - 2, 28)];
@@ -104,7 +121,7 @@
     
     
     UIImageView* line5 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 50 + 30, mainWidth - 34, 2)];
-    line5.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line5.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line5];
     
     UILabel *userSystemCourse = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*1 , (mainWidth - 30)*0.3 - 2, 28)];
@@ -113,7 +130,7 @@
     userSystemCourse.text = @"系统课程";
     userSystemCourse.textAlignment = NSTextAlignmentCenter;
     userSystemCourse.font = [UIFont boldSystemFontOfSize:18];
-    userSystemCourse.backgroundColor = [UIColor hexFloatColor:@"CCFFCC"];
+    userSystemCourse.backgroundColor = [UIColor hexFloatColor:@"FFEC8B"];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     //no.textColor = [UIColor whiteColor];
     //no.backgroundColor = [UIColor blackColor];
@@ -124,7 +141,7 @@
     systemCourse.adjustsFontSizeToFitWidth = YES;
     //userName.text = @"姓名";
     systemCourse.textAlignment = NSTextAlignmentCenter;
-    systemCourse.backgroundColor = [UIColor hexFloatColor:@"CCFFCC"];
+    systemCourse.backgroundColor = [UIColor hexFloatColor:@"FFEC8B"];
     systemCourse.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:systemCourse];
     
@@ -132,7 +149,7 @@
     
     
     UIImageView* line6 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 *1, mainWidth - 34, 2)];
-    line6.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line6.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line6];
     
     
@@ -157,7 +174,7 @@
     
     
     UIImageView* line7 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 * 2, mainWidth - 34, 2)];
-    line7.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line7.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line7];
     
     UILabel *userGongFangCourse = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*3 , (mainWidth - 30)*0.3 - 2, 28)];
@@ -169,7 +186,7 @@
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     //no.textColor = [UIColor whiteColor];
     //no.backgroundColor = [UIColor blackColor];
-    userGongFangCourse.backgroundColor = [UIColor hexFloatColor:@"CCFFCC"];
+    userGongFangCourse.backgroundColor = [UIColor hexFloatColor:@"FFEC8B"];
     [self.view addSubview:userGongFangCourse];
     
     gongfangCourse = [[UILabel alloc] initWithFrame:CGRectMake(15 + (mainWidth - 30)*0.3 + 2, 52 + 30*3, (mainWidth - 30)*0.7 - 4, 28)];
@@ -178,12 +195,12 @@
     //userParentName.text = @"家长姓名";
     gongfangCourse.textAlignment = NSTextAlignmentCenter;
     gongfangCourse.font = [UIFont systemFontOfSize:18];
-    gongfangCourse.backgroundColor = [UIColor hexFloatColor:@"CCFFCC"];
+    gongfangCourse.backgroundColor = [UIColor hexFloatColor:@"FFEC8B"];
     
     [self.view addSubview:gongfangCourse];
     
     UIImageView* line8 = [[UIImageView alloc] initWithFrame:CGRectMake(17, 80 + 30 * 3, mainWidth - 34, 2)];
-    line8.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line8.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line8];
     
     UILabel *userMemActCourse = [[UILabel alloc] initWithFrame:CGRectMake(17, 52 + 30*4 , (mainWidth - 30)*0.3 - 2, 28)];
@@ -208,7 +225,7 @@
     
     
     UIImageView* line9 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 80 + 30 * 4, mainWidth - 30, 2)];
-    line9.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    line9.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     [self.view addSubview:line9];
     
     
@@ -220,7 +237,7 @@
     systemCourseTitle.font = [UIFont boldSystemFontOfSize:20];
     //label5.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
     systemCourseTitle.textColor = [UIColor whiteColor];
-    systemCourseTitle.backgroundColor = [UIColor hexFloatColor:@"66cc33"];
+    systemCourseTitle.backgroundColor = MYCOURSE_NAVBAR_COLOR;
     
     [self.view addSubview:systemCourseTitle];
 
@@ -303,12 +320,43 @@
     
     [MyLoginModel getUserCourseInfo:studentNo success:^(AFHTTPRequestOperation* operation, NSObject* result){
         
-        int recordsReturned = [[(NSDictionary*)result objectForKey:@"recordsReturned"] intValue];
+        int resultStatus = [[(NSDictionary*)result objectForKey:@"error"] intValue];
         
-        if(recordsReturned != 0)   //获取成功
+        if(resultStatus == false)   //获取成功
         {
-            NSArray *recordArray = [(NSDictionary*)result objectForKey:@"records"];
             
+            NSArray *data = [(NSDictionary*)result objectForKey:@"data"];
+            
+            NSArray *ordersArray = [(NSDictionary*)[(NSArray*)data objectAtIndex:0] objectForKey:@"orders"];
+            NSString *updateTime = nil;
+            
+            int userLevel = 0;
+            int orderId = 0;
+            
+            for(NSDictionary *record  in ordersArray)
+            {
+                systemNum += [[(NSDictionary *)record objectForKey:@"paiedCount"] intValue];
+                systemUsedNum += [[(NSDictionary *)record objectForKey:@"usedCount"] intValue];
+                specialNum += [[(NSDictionary *)record objectForKey:@"specialCourseCount"] intValue];
+                specialUsedNum += [[(NSDictionary *)record objectForKey:@"usedSpecialCourseCount"] intValue];
+                artNum += [[(NSDictionary *)record objectForKey:@"gongfangCount"] intValue];
+                artUsedNum += [[(NSDictionary *)record objectForKey:@"usedGongFangCount"] intValue];
+                memberNum +=  [[(NSDictionary *)record objectForKey:@"huodongCount"] intValue];
+                memberUsedNum += [[(NSDictionary *)record objectForKey:@"usedHuodongCount"] intValue];
+                
+                
+                if((orderId == 0) || (orderId > [[(NSDictionary *)record objectForKey:@"id"] intValue]))
+                {
+                   orderId = [[(NSDictionary *)record objectForKey:@"id"] intValue];
+                   userLevel = [[(NSDictionary *)record objectForKey:@"level"] intValue];
+                   updateTime  = [(NSDictionary *)record objectForKey:@"updateTime"];
+                    
+                }
+                
+            }
+            
+            
+            /*
             
             NSDictionary *record = [recordArray objectAtIndex:0];
             
@@ -328,30 +376,30 @@
             
             NSString * gongFangCount = [(NSDictionary *)record objectForKey:@"gongfangCount"] ;
             NSString * usedGongFangCount = [(NSDictionary *)record objectForKey:@"usedGongFangCount"] ;
-            
+            */
             
             expireDate.text = updateTime;
             
-            systemCourse.text =  [NSString stringWithFormat:@"总课券%@次,已使用%@次",paidCount,usedCount];
-            specialCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次",specialCourseCount,usedSpecialCourseCount];
-            gongfangCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次",gongFangCount,usedGongFangCount];
-            memActCourse.text = [NSString stringWithFormat:@"总课券%@次,已使用%@次",huoDongCount,usedHuodongCount];
+            systemCourse.text =  [NSString stringWithFormat:@"总课券%d次,已使用%d次",systemNum,systemUsedNum];
+            specialCourse.text = [NSString stringWithFormat:@"总课券%d次,已使用%d次",specialNum,specialUsedNum];
+            gongfangCourse.text = [NSString stringWithFormat:@"总课券%d次,已使用%d次",artNum,artUsedNum];
+            memActCourse.text = [NSString stringWithFormat:@"总课券%d次,已使用%d次",memberNum,memberUsedNum];
             
             NSString *userLevelTitle = [NSString stringWithFormat:@"您的等级为:%d级",userLevel ];
             
             levelTitle.text = userLevelTitle;
             
             
-            if((paidCount != nil) &&([paidCount intValue] != 0))
+            if(systemNum != 0)
              {
-              progress.progress = [usedCount floatValue]/[paidCount floatValue] ;
+              progress.progress = (float)systemUsedNum/(float)systemNum;
                 
-              float pro = [usedCount floatValue]/[paidCount floatValue] * 100;
+              float pro = (float)systemUsedNum/(float)systemNum * 100;
               courseProgress.text = [NSString stringWithFormat:@"%d%@", (int)pro ,@"%" ];
                  
              }
             
-            courseTime.text = userCourseTime;
+            //courseTime.text = userCourseTime;
             
             [[XBToastManager ShardInstance] hideprogress];
             
