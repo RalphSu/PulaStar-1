@@ -49,7 +49,7 @@
     [self.navigationController.navigationBar  setBackgroundImage:[UIImage imageWithRenderColor:COURSE_NAVBAR_COLOR renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
     
     
-    NSString *url = [NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/timecourse/appshow?id=%@&no=%@&&color=#%@",_searchId,_courseNo,@"ff7f00"];
+    NSString *url = [NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/timecourse/appshow?id=%@&no=%@&&color=%@",_searchId,_courseNo,@"ff7f00"];
 
     
     [self actionCustomLeftBtnWithNrlImage:@"btnback" htlImage:@"btnback" title:@"" action:^{
@@ -75,7 +75,7 @@
         [KShareViewManage showViewToShareNews:[NSString stringWithFormat:@"%@课程",_courseName]
                                       Content:@"普拉星球 少儿艺术创造力研发中心"
                                         Image:[UIImage imageNamed:@"pulalogo"]
-                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/timecourse/appshow?id=%@&no=%@&color=#%@&showappstore=true",_searchId,_courseNo,@"ff7f00"]
+                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/timecourse/appshow?id=%@&no=%@&color=%@&showappstore=true",_searchId,_courseNo,@"ff7f00"]
                                      platform:array
                              inViewController:self];
         

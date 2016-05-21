@@ -61,7 +61,7 @@
     
     [self.navigationController.navigationBar  setBackgroundImage:[UIImage imageWithRenderColor:ACTIVITY_NAVBAR_COLOR renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
     
-    NSString *url = [NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@&color=#%@",_activityId,@"ee2c2c"];
+    NSString *url = [NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@&color=%@",_activityId,@"ee2c2c"];
     
     
     [self actionCustomLeftBtnWithNrlImage:@"btnback" htlImage:@"btnback" title:@"" action:^{
@@ -88,7 +88,7 @@
         [KShareViewManage showViewToShareNews:[NSString stringWithFormat:@"%@活动",_activityTitle]
                                       Content:@"普拉星球 少儿艺术创造力研发中心"
                                         Image:[UIImage imageNamed:@"pulalogo"]
-                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@&color=#%@&showappstore=true",_activityId,@"ee2c2c"]
+                                          Url:[NSString stringWithFormat:@"http://121.40.151.183:8080/pula-sys/app/notice/appshow?id=%@&color=%@&showappstore=true",_activityId,@"ee2c2c"]
                                      platform:array
                              inViewController:self];
 
