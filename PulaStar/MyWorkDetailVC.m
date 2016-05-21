@@ -106,7 +106,7 @@
     dianPing.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:dianPing];
     
-    levelImage = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (mainWidth - 20)*0.4, 40 + mainHeight/2 ,(mainWidth - 20)*0.5, 30)];
+    levelImage = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (mainWidth - 20)*0.4, 40 + mainHeight/2 ,(mainWidth - 40)*0.5, 30)];
     
     
     NSString *string = [NSString stringWithFormat:@"star%@",workInfoRate];
