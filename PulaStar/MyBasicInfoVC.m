@@ -237,7 +237,7 @@
     [self.view addSubview:line10];
     
     
-    UIImageView* img = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth/2 + 30 , mainHeight * 0.6, mainWidth/2 - 50 ,mainHeight * 0.2 )];
+    UIImageView* img = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth/2  , mainHeight * 0.6, mainWidth/2 ,mainHeight * 0.2 )];
     
     img.image = [UIImage imageNamed:@"my_info_bottom_pic"];
     [self.view addSubview:img];
