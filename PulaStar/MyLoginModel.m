@@ -145,6 +145,8 @@
 {
     NSString *url = [NSString stringWithFormat:auditionCreateUrl,parentName,studentName,branchNo,bookingTime,age,phone];
     
+    url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
     [[XBApi SharedXBApi] requestWithURL:url paras:nil type:XBHttpResponseType_JqueryJson success:success    failure:failure];
 }
 

@@ -110,9 +110,9 @@
                 responseObject = [NSDictionary dictionaryWithJSONString:r error:&error];
             }
             
-    #ifdef DEBUG
+    //#ifdef DEBUG
             NSLog(@"url:%@\r\nbody:%@", url, responseObject);
-    #endif
+    //#endif
             if (allowSaveCache == XBHttpCacheMemory || allowSaveCache == XBHttpCacheDisk) {
                 [[XBHttpCache sharedInstance] storeResponse:responseObject forUrl:requestURL byParam:transferParas toDisk:allowSaveCache == XBHttpCacheMemory? NO:YES];
             }

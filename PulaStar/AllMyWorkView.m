@@ -178,16 +178,18 @@
     }
     
     //indexPath.row*2
-    if(arrActivities.count < (indexPath.row*2 ))
+    if(arrActivities.count < ((indexPath.row + 1)*2))
     
     {
-        [cell setMyWorkItem:[arrActivities objectAtIndex:indexPath.row] workItem:nil current_row:(int)indexPath.row ];
+        [cell setMyWorkItem:[arrActivities objectAtIndex:(indexPath.row *2)] workItem:nil current_row:(int)indexPath.row ];
     }
     else
+   
     {
      [cell setMyWorkItem:[arrActivities objectAtIndex:(indexPath.row *2)] workItem:[arrActivities objectAtIndex:(indexPath.row*2 + 1)]
              current_row:(int)indexPath.row];
     }
+    
     cell.delegate = self;
     
     return cell;

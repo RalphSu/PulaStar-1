@@ -85,21 +85,21 @@
         [imgProRight addGestureRecognizer:singleRightTap];
         
         
-        [self addSubview:imgProRight];
+        //[self addSubview:imgProRight];
         
         dateRight = [[UILabel alloc]initWithFrame:CGRectMake(mainWidth/2 +5,10 + mainHeight/4,(mainWidth/2 - 15)/4 + 1, 15)];
-        [self addSubview:dateRight];
+        //[self addSubview:dateRight];
         
-        timeRight = [[UILabel alloc]initWithFrame:CGRectMake(mainWidth/2 +5 + (mainWidth/2 - 15)/4,10 + mainHeight/4,(mainWidth/2 - 25)*0.75 , 15)];
-        [self addSubview:timeRight];
+        timeRight = [[UILabel alloc]initWithFrame:CGRectMake(mainWidth/2 +5 + (mainWidth/2 - 15)/4,10 + mainHeight/4,(mainWidth/2 - 15)*0.75 , 15)];
+        //[self addSubview:timeRight];
         
         
         dianPingRight = [[UILabel alloc] initWithFrame:CGRectMake(mainWidth/2 +5, 25 + mainHeight/4 ,(mainWidth/2 - 15)/4, 15)];
-        [self addSubview:dianPingRight];
+        //[self addSubview:dianPingRight];
         
         levelImageRight = [[UIImageView alloc] initWithFrame:CGRectMake(mainWidth/2 + 5 + (mainWidth/2 - 15)*0.4, 25 + mainHeight/4 ,(mainWidth/2 - 20)*0.5, 15)];
         
-        [self addSubview:levelImageRight];
+        //[self addSubview:levelImageRight];
         
         
         /*
@@ -166,6 +166,19 @@
     
     if(item1 != NULL)
     {
+        [self addSubview:imgProRight];
+        
+   
+        [self addSubview:dateRight];
+        
+      
+        [self addSubview:timeRight];
+      
+        [self addSubview:dianPingRight];
+        
+    
+        [self addSubview:levelImageRight];
+        
         NSString *image1 = [NSString stringWithFormat:@"fp=%@&id=%@",[(NSMutableDictionary *)item1 objectForKey:@"workIconFileId"],[(NSMutableDictionary *)item1 objectForKey:@"workIconId"]];
         
         [imgProRight setImage_oy:workImageBaseUrl image:image1];
